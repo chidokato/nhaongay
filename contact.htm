@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Nhà ở ngay</title>
+<meta name="generator" content="Bootply" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+<link rel="icon" type="image/png" sizes="16x16" href="images/jokercoffee/logo.png">
+
+<!------------------- CSS ------------------->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+<link href="css/contact.css" rel="stylesheet">
+ 
+
+<!------------------- FONT ------------------->
+
+</head>
+
+<body>
+
+<!------------------- NAVIGATOR ------------------->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark" aria-label="Ninth navbar example">
+		<div class="container">
+		  <a class="navbar-brand" href="#"><img src="images/lg-hd.svg" alt="" class="mw-100"></a>
+		  <div class="toggle-menu" type="button" data-bs-toggle="button">
+				<button class="navbar-toggler ico-menu" id="navbarToggler">
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+			</div>
+	
+		  <div class="navbar-collapse flex-grow-1" id="navbarsExample07XL">
+			<ul class="collapse navbar-nav mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="homepage.htm"><i class="icon-home"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sales.htm">Mua bán</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="rents.htm">Cho thuê</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="projects.htm">Dự án</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="reviews.htm">Review 4 phương</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="news.htm" data-bs-toggle="dropdown" onclick="myFunctLink(this)">Tin tức</a>
+					<a class="expand dropdown-toggle d-lg-none" href="#" data-bs-toggle="dropdown"></a>
+					<div class="dropdown-menu">
+						<ul>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Tin phong thủy</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Thẩm định giá</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Dịch vụ công chứng</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Quy hoạch đô thị</a></li>
+						</ul>
+					</div>
+				<li class="nav-item">
+					<a class="nav-link" href="brokers.htm">Nhà môi giới</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="agents.htm">Đại lý</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item cta-btn il">
+				  <a class="nav-link" href="#"><span class="cta-ico"><i class="icon-new"></i></span><span class="cta-text">Đăng tin</span></a>
+				</li>
+				<li class="nav-item nav-icon notification dropdown">
+					<a class="nav-link message" data-bs-toggle="dropdown" href="#"><i class="icon-bell"></i><span class="counter">2</span></a>
+					<div class="dropdown-menu scrollbar">
+						<div class="notify-tool">
+							<a href="#">Đánh đấu đọc tất cả</a>
+							<a href="#" class="view-all">Xem tất cả <i class="icon-next ms-1"></i></a>
+						</div>
+						<div class="widget-list widget-news">
+							<a href="#" class="news-item unread">
+								<span><img src="images/space-2.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item unread">
+								<span><img src="images/space-2.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item nav-icon dropdown">
+					<a class="nav-link" data-bs-toggle="dropdown" href="#"><i class="icon-user"></i></a>
+					<div class="dropdown-menu">
+						<ul>
+							<li><a href="#" class="submenu-link">Quản lý tin đăng</a></li>
+							<li><a href="#" class="submenu-link">Quản lý thông tin</a></li>
+							<li><a href="#" class="submenu-link">Tin quan tâm</a></li>
+							<li><a href="#" class="submenu-link">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</li>
+			  </ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!------------------- END NAVIGATOR ------------------->
+
+<!------------------- BREADCRUMB ------------------->
+<section class="sec-breadcrumb">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+			</ol>
+		</nav>
+	</div>
+</section>
+<!------------------- END: BREADCRUMB ------------------->
+
+
+<!------------------- COVER ------------------->
+
+<section class="sec-cover">
+	<picture>
+		<source media="(min-width: 768px)" srcset="images/cover-contact.jpg" class="mw-100">
+		<img src="images/space-9.gif" class="w-100 thumb" style="background-image: url(images/cover-contact.jpg);">
+	</picture>
+	<div class="container">
+		<div class="cover-content cover-footer-wrap">
+			<div class="cover-title">
+				<h3><span class="cover-title-filled">Liên hệ</span><span class="position-relative">Nhà ở ngay</span></h3>
+			</div>
+			<p>Trụ sở <b>NHÀ Ở NGAY</b></p>
+
+			<div class="cover-ct">
+				<div class="container">
+					<div class="row row-cols-1 row-cols-md-3 g-4">
+						<div class="col">
+							<div class="cover-ct-item">
+								<div class="cover-ct-item-text">
+									<h6>Hotline tư vấn</h6>
+									<span class="phone">0919.51.18.81</span>
+								</div>
+								<span class="cover-ct-item-img"><i class="icon-phone-filled"></i></span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="cover-ct-item">
+								<div class="cover-ct-item-text">
+									<h6>email</h6>
+									<span>cskh@nhaongay.vn</span>
+								</div>
+								<span class="cover-ct-item-img"><i class="icon-mail-filled"></i></span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="cover-ct-item">
+								<div class="cover-ct-item-text">
+									<h6>Địa chỉ văn phòng</h6>
+									<span>61 Ngụy Như Kon Tum, Quận Thanh Xuân, Hà Nội</span>
+								</div>
+								<span class="cover-ct-item-img"><i class="icon-building-filled"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!------------------- END COVER ------------------->
+
+<!------------------- CARD ------------------->
+<section class="contact-sec">
+	<div class="google-map"><img src="previews/map.jpg" alt="" class="w-100"></div>
+	<div class="contact-title-wrap">
+		<div class="container">
+			<div class="text-center">
+				<div class="primary-title">
+					<h3><span class="cover-title-filled">Liên hệ</span><span class="position-relative">Với chúng tôi</span></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact-form">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6">
+					<form class="row g-3">
+						<div class="col-12">
+							<div class="form-floating">
+								<input type="text" class="form-control" id="yourName" placeholder="Họ tên">
+								<label for="yourName">Họ tên</label>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-floating">
+								<input type="text" class="form-control" id="yourAddress" placeholder="Địa chỉ">
+								<label for="yourAddress">Địa chỉ</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-floating">
+								<input type="number" class="form-control" id="yourPhone" placeholder="Số điện thoại">
+								<label for="yourPhone">Số điện thoại</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-floating">
+								<input type="email" class="form-control" id="yourEmail" placeholder="email">
+								<label for="yourEmail">Email</label>
+							</div>
+						</div>
+					
+						<div class="col-12">
+							<div class="form-floating">
+								<textarea class="form-control" id="yourContent" placeholder="Nội dung" rows="4"></textarea>
+								<label for="yourContent">Nội dung</label>
+							</div>
+						</div>
+					
+						<div class="load-more text-center mt-4 pt-2">
+							<div class="cta-btn ir">
+								<a class="" href="#"><span class="cta-text font-weight-semibold">Gửi thông tin</span><span class="cta-ico"><i class="icon-next"></i></span></a>
+							</div>
+						</div>
+					</form>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!------------------- END CARD ------------------->
+
+
+<!------------------- FOOTER ------------------->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 ft-contact-wrap">
+				<div class="ft-contact">
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>HOTLINE TƯ VẤN</h6>
+							<span><a href="tel:0919511881">0919.51.18.81</a></span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-phone-filled"></i></span>
+					</div>
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>Email</h6>
+							<span><a href="mailto:cskh@nhaongay.vn" class="">cskh@nhaongay.vn</a></span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-mail-filled"></i></span>
+					</div>
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>ĐỊA CHỈ VĂN PHÒNG</h6>
+							<span>61 Ngụy Như Kon Tum, Quận Thanh Xuân, Hà Nội</span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-building-filled"></i></span>
+					</div>
+				</div>
+				<div class="ft-social">
+					<ul class="social">
+						<li><a class=""><i class="icon-facebook"></i></a></li>
+						<li><a class=""><i class="icon-youtube"></i></a></li>
+						<li><a class=""><i class="icon-zalo"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9 ft-main">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<h5 class="line-b">VỀ CHÚNG TÔI</h5>
+							<ul class="ft-link-items">
+								<li><a href="#" class="">Báo giá & Hỗ trợ</a></li>
+								<li><a href="#" class="">Câu hỏi thường gặp</a></li>
+								<li><a href="#" class="">Về chúng tôi</a></li>
+								<li><a href="#" class="">Tin nội bộ</a></li>
+								<li><a href="contact.htm" class="">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<h5 class="line-b">QUY ĐỊNH</h5>
+							<ul class="ft-link-items">
+								<li><a href="#" class="">Quy chế hoạt động</a></li>
+								<li><a href="#" class="">Quy định đăng tin</a></li>
+								<li><a href="#" class="">Điều khoản thỏa thuận</a></li>
+								<li><a href="#" class="">Thành viên và bảo mật</a></li>
+								<li><a href="#" class="">Giải quyết tranh chấp</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<div class="mb-4">
+								<h5 class="line-b">HỖ TRỢ KHÁCH HÀNG</h5>
+								<ul class="ft-link-items">
+									<li><a href="mailto:cskh@nhaongay.vn" class=""><i class="icon-mail me-2"></i>cskh@nhaongay.vn</a></li>
+									<li><a href="tel:0919511881"><i class="icon-call me-2"></i>0919.51.18.81</a></li>
+								</ul>
+							</div>
+							<div class="mb-4">
+								<h5 class="line-b">HỖ TRỢ KỸ THUẬT</h5>
+								<ul class="ft-link-items">
+									<li><a href="mailto:kythuat@nhaongay.vn" class=""><i class="icon-mail me-2"></i>kythuat@nhaongay.vn</a></li>
+									<li><a href="tel:0919511881"><i class="icon-call me-2"></i>0919.51.18.81</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-info">
+							<div class="line-b"><img src="images/lg-ft.svg" alt=""></div>
+							<p class="mb-2">Địa chỉ: 61 Ngụy Như Kon Tum, Quận Thanh Xuân, Hà Nội</p>
+							<p class="mb-2">Điện thoại: 0919.51.18.81</p>
+							<p class="mb-2">MST: 0109481608 - Ngày cấp 05/01/2021</p>
+							<p class="mb-2">Nơi cấp: Sở Kế hoạch và Đầu tư Thành phố Hà Nội, Việt Nam</p>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="row ft-register-subscribe mb-4">
+					<div class="col-lg-6 align-self-center"><span class="line-b">ĐĂNG KÝ NHẬN BẢN TIN TỪ <b>NHÀ Ở NGAY</b></span></div>
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Nhập email của bạn" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="icon-send"></i></button>
+						</div>
+					</div>
+				</div>
+				<p class="ft-copyright text-end">Copyright © 2021 Nhà Ở Ngay, All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!------------------- END: FOOTER ------------------->
+
+<!------------------- JS core------------------->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>

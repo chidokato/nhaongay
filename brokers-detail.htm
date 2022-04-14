@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Nhà ở ngay</title>
+<meta name="generator" content="Bootply" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+<link rel="icon" type="image/png" sizes="16x16" href="images/jokercoffee/logo.png">
+
+<!------------------- CSS ------------------->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="css/swiper-bundle.min.css" rel="stylesheet"> -->
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<link href="css/card.css" rel="stylesheet">
+<link href="css/rating.css" rel="stylesheet">
+<link href="css/broker.css" rel="stylesheet">
+
+<!------------------- FONT ------------------->
+
+</head>
+
+<body>
+
+<!------------------- NAVIGATOR ------------------->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark" aria-label="Ninth navbar example">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="images/lg-hd.svg" alt="" class="mw-100"></a>
+			<div class="toggle-menu" type="button" data-bs-toggle="button">
+				<button class="navbar-toggler ico-menu" id="navbarToggler">
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+			</div>
+	
+		  <div class="navbar-collapse flex-grow-1" id="navbarsExample07XL">
+			<ul class="collapse navbar-nav mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="homepage.htm"><i class="icon-home"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sales.htm">Mua bán</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="rents.htm">Cho thuê</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="projects.htm">Dự án</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="reviews.htm">Review 4 phương</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="news.htm" data-bs-toggle="dropdown" onclick="myFunctLink(this)">Tin tức</a>
+					<a class="expand dropdown-toggle d-lg-none" href="#" data-bs-toggle="dropdown"></a>
+					<div class="dropdown-menu">
+						<ul>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Tin phong thủy</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Thẩm định giá</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Dịch vụ công chứng</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Quy hoạch đô thị</a></li>
+						</ul>
+					</div>
+				<li class="nav-item active">
+					<a class="nav-link" href="brokers.htm">Nhà môi giới</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="agents.htm">Đại lý</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item cta-btn il">
+				  <a class="nav-link" href="#"><span class="cta-ico"><i class="icon-new"></i></span><span class="cta-text">Đăng tin</span></a>
+				</li>
+				<li class="nav-item nav-icon notification dropdown">
+					<a class="nav-link message" data-bs-toggle="dropdown" href="#"><i class="icon-bell"></i><span class="counter">2</span></a>
+					<div class="dropdown-menu scrollbar">
+						<div class="notify-tool">
+							<a href="#">Đánh đấu đọc tất cả</a>
+							<a href="#" class="view-all">Xem tất cả <i class="icon-next ms-1"></i></a>
+						</div>
+						<div class="widget-list widget-news">
+							<a href="#" class="news-item unread">
+								<span><img src="images/space-2.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item unread">
+								<span><img src="images/space-2.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item nav-icon dropdown">
+					<a class="nav-link" data-bs-toggle="dropdown" href="#"><i class="icon-user"></i></a>
+					<div class="dropdown-menu">
+						<ul>
+							<li><a href="#" class="submenu-link">Quản lý tin đăng</a></li>
+							<li><a href="#" class="submenu-link">Quản lý thông tin</a></li>
+							<li><a href="#" class="submenu-link">Tin quan tâm</a></li>
+							<li><a href="#" class="submenu-link">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</li>
+			  </ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!------------------- END NAVIGATOR ------------------->
+
+<!------------------- BREADCRUMB ------------------->
+<section class="sec-breadcrumb">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+				<li class="breadcrumb-item"><a href="#">Nhà môi giới</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Nguyễn Hoàng Long</li>
+			</ol>
+		</nav>
+	</div>
+</section>
+<!------------------- END: BREADCRUMB ------------------->
+
+
+<!------------------- COVER ------------------->
+
+<section class="broker-cover">
+	<picture>
+		<source media="(min-width: 768px)" srcset="images/cover-broker-detail.jpg" class="mw-100">
+		<img src="images/space-3.gif" class="w-100 thumb" style="background-image: url(images/cover-broker-detail.jpg);">
+	</picture>
+	<div class="broker-cover-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="broker-content-wrap">
+						<span class="avatar"><img src="images/space-2.gif" class="thumb w-100" style="background-image: url('previews/brokers/4.jpg');" alt="..."></span>
+						<div class="broker-content-body">
+							<div class="broker-header">
+								<h4 class="line-b">Nguyễn Hoàng Long</h4>
+								<span>MS:123</span>
+							</div>
+							<div class="broker-info">
+								<span><i class="icon-experience me-2"></i>8 năm kinh nghiệm</span>
+								<span><i class="icon-location me-2"></i>Thanh Xuân, Hà Nội</span>
+								<span><i class="icon-call me-2"></i>0989 595 989</span>
+								<span><i class="icon-mail me-2"></i>long.nguyendxmb@.vn</span>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn btn-outline"><span>Tư vấn ngay <i class="icon-chat ms-1"></i></span></button>
+				</div>
+				<div class="col-lg-4 d-none d-lg-block">
+					<div class="input-group search-input">
+						<input type="text" class="form-control" placeholder="Tìm kiếm nhanh">
+						<button type="submit" class="input-group-text"><i class="icon-search"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!------------------- END COVER ------------------->
+
+<!------------------- PRODUCTs ------------------->
+<section class="card-grid broker-product-sec">
+	<div class="container">
+		
+		<div class="text-center mb-3">
+			<div class="primary-title">
+				<h3><span class="cover-title-filled">Sản phẩm của</span><span class="position-relative">Nguyễn Hoàng Long</span></h3>
+			</div>
+		</div>
+
+		<div class="row row-cols-2 row-cols-lg-4 g-3 g-lg-4 grid-view">
+			<div class="col">
+				<div class="card card-s card-s4">
+					<span class="hot"><img src="images/new-label.png"></span>
+					<a href="#">
+						<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="..."></span>
+						<span class="cat">
+							<span class="room-status">Đã sử dụng</span>
+						</span>
+						<span class="view-more">Chi tiết</span>
+						<div class="product-status">
+							<span><i class="icon-acreage me-1"></i>50m2</span>
+							<span><i class="icon-bed me-1"></i>2PN</span>
+							<span><i class="icon-bathroom me-1"></i>2WC</span>
+						</div>
+					</a>
+					<div class="card-body">
+						<div class="card-body-wrap">
+							<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Cần bán lại nền đất 5m x 16m - gần KCN Pouyuen - Tên Lửa (đã có giấy phép xây dựng)</a></h5>
+							<div class="card-info">
+								<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+								<span><i class="icon-time me-2"></i>2 ngày trước</span>
+								<a href="#" class="cat-link text-sub">Nhà riêng</a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+							<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-s card-s4">
+					<a href="#">
+						<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');" alt="..."></span>
+						<span class="cat">
+							<span class="room-status">Đã sử dụng</span>
+						</span>
+						<span class="view-more">Chi tiết</span>
+						<div class="product-status">
+							<span><i class="icon-acreage me-1"></i>50m2</span>
+							<span><i class="icon-bed me-1"></i>2PN</span>
+							<span><i class="icon-bathroom me-1"></i>2WC</span>
+						</div>
+					</a>
+					<div class="card-body">
+						<div class="card-body-wrap">
+							<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Bán tòa chung cư mini Nguyễn Khánh Toàn 110m2 x 7T 6m MT - nhỉnh 16 tỷ - thang máy - 27 phòng khép</a></h5>
+							<div class="card-info">
+								<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+								<span><i class="icon-time me-2"></i>2 ngày trước</span>
+								<a href="#" class="cat-link text-sub">Nhà riêng</a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+							<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-s card-s4">
+					<span class="hot"><img src="images/new-label.png"></span>
+					<a href="#">
+						<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="..."></span>
+						<span class="cat">
+							<span class="room-status">Đã sử dụng</span>
+						</span>
+						<span class="view-more">Chi tiết</span>
+						<div class="product-status">
+							<span><i class="icon-acreage me-1"></i>50m2</span>
+							<span><i class="icon-bed me-1"></i>2PN</span>
+							<span><i class="icon-bathroom me-1"></i>2WC</span>
+						</div>
+					</a>
+					<div class="card-body">
+						<div class="card-body-wrap">
+							<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Cần bán lại nền đất 5m x 16m - gần KCN Pouyuen - Tên Lửa (đã có giấy phép xây dựng)</a></h5>
+							<div class="card-info">
+								<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+								<span><i class="icon-time me-2"></i>2 ngày trước</span>
+								<a href="#" class="cat-link text-sub">Nhà riêng</a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+							<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-s card-s4">
+					<a href="#">
+						<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('http://channel.vcmedia.vn/prupload/270/2019/01/img_20190109160228304.jpg');" alt="..."></span>
+						<span class="cat">
+							<span class="room-status">Đã sử dụng</span>
+						</span>
+						<span class="view-more">Chi tiết</span>
+						<div class="product-status">
+							<span><i class="icon-acreage me-1"></i>50m2</span>
+							<span><i class="icon-bed me-1"></i>2PN</span>
+							<span><i class="icon-bathroom me-1"></i>2WC</span>
+						</div>
+					</a>
+					<div class="card-body">
+						<div class="card-body-wrap">
+							<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Bán tòa chung cư mini Nguyễn Khánh Toàn 110m2 x 7T 6m MT - nhỉnh 16 tỷ - thang máy - 27 phòng khép</a></h5>
+							<div class="card-info">
+								<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+								<span><i class="icon-time me-2"></i>2 ngày trước</span>
+								<a href="#" class="cat-link text-sub">Nhà riêng</a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+							<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-s card-s4">
+					<span class="hot"><img src="images/new-label.png"></span>
+					<a href="#">
+						<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="..."></span>
+						<span class="cat">
+							<span class="room-status">Đã sử dụng</span>
+						</span>
+						<span class="view-more">Chi tiết</span>
+						<div class="product-status">
+							<span><i class="icon-acreage me-1"></i>50m2</span>
+							<span><i class="icon-bed me-1"></i>2PN</span>
+							<span><i class="icon-bathroom me-1"></i>2WC</span>
+						</div>
+					</a>
+					<div class="card-body">
+						<div class="card-body-wrap">
+							<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Cần bán lại nền đất 5m x 16m - gần KCN Pouyuen - Tên Lửa (đã có giấy phép xây dựng)</a></h5>
+							<div class="card-info">
+								<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+								<span><i class="icon-time me-2"></i>2 ngày trước</span>
+								<a href="#" class="cat-link text-sub">Nhà riêng</a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+							<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-s card-s4">
+					<a href="#">
+						<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('http://channel.vcmedia.vn/prupload/270/2019/01/img_20190109160228304.jpg');" alt="..."></span>
+						<span class="cat">
+							<span class="room-status">Đã sử dụng</span>
+						</span>
+						<span class="view-more">Chi tiết</span>
+						<div class="product-status">
+							<span><i class="icon-acreage me-1"></i>50m2</span>
+							<span><i class="icon-bed me-1"></i>2PN</span>
+							<span><i class="icon-bathroom me-1"></i>2WC</span>
+						</div>
+					</a>
+					<div class="card-body">
+						<div class="card-body-wrap">
+							<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Bán tòa chung cư mini Nguyễn Khánh Toàn 110m2 x 7T 6m MT - nhỉnh 16 tỷ - thang máy - 27 phòng khép</a></h5>
+							<div class="card-info">
+								<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+								<span><i class="icon-time me-2"></i>2 ngày trước</span>
+								<a href="#" class="cat-link text-sub">Nhà riêng</a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+							<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-s card-s4">
+					<span class="hot"><img src="images/new-label.png"></span>
+					<a href="#">
+						<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="..."></span>
+						<span class="cat">
+							<span class="room-status">Đã sử dụng</span>
+						</span>
+						<span class="view-more">Chi tiết</span>
+						<div class="product-status">
+							<span><i class="icon-acreage me-1"></i>50m2</span>
+							<span><i class="icon-bed me-1"></i>2PN</span>
+							<span><i class="icon-bathroom me-1"></i>2WC</span>
+						</div>
+					</a>
+					<div class="card-body">
+						<div class="card-body-wrap">
+							<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Cần bán lại nền đất 5m x 16m - gần KCN Pouyuen - Tên Lửa (đã có giấy phép xây dựng)</a></h5>
+							<div class="card-info">
+								<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+								<span><i class="icon-time me-2"></i>2 ngày trước</span>
+								<a href="#" class="cat-link text-sub">Nhà riêng</a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+							<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-s card-s4">
+					<a href="#">
+						<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');" alt="..."></span>
+						<span class="cat">
+							<span class="room-status">Đã sử dụng</span>
+						</span>
+						<span class="view-more">Chi tiết</span>
+						<div class="product-status">
+							<span><i class="icon-acreage me-1"></i>50m2</span>
+							<span><i class="icon-bed me-1"></i>2PN</span>
+							<span><i class="icon-bathroom me-1"></i>2WC</span>
+						</div>
+					</a>
+					<div class="card-body">
+						<div class="card-body-wrap">
+							<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Bán tòa chung cư mini Nguyễn Khánh Toàn 110m2 x 7T 6m MT - nhỉnh 16 tỷ - thang máy - 27 phòng khép</a></h5>
+							<div class="card-info">
+								<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+								<span><i class="icon-time me-2"></i>2 ngày trước</span>
+								<a href="#" class="cat-link text-sub">Nhà riêng</a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+							<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="load-more text-center mt-4 pt-2">
+			<div class="cta-btn ir">
+				<a class="" href="#"><span class="cta-text font-weight-semibold">Xem thêm</span><span class="cta-ico"><i class="icon-down"></i></span></a>
+			</div>
+		</div>
+		<!-- <div class="position-relative grid-view">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="card card-s card-s4">
+						<a href="#">
+							<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="..."></span>
+							<span class="cat">
+								<span class="room-status">Đã sử dụng</span>
+							</span>
+							<span class="view-more">Chi tiết</span>
+							<div class="product-status">
+								<span><i class="icon-acreage me-1"></i>50m2</span>
+								<span><i class="icon-bed me-1"></i>2PN</span>
+								<span><i class="icon-bathroom me-1"></i>2WC</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<div class="card-body-wrap">
+								<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Newtatco Xuân Đỉnh</a></h5>
+								<div class="card-info">
+									<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+									<span><i class="icon-time me-2"></i>2 ngày trước</span>
+									<a href="#" class="cat-link text-sub">Nhà riêng</a>
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+								<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card-s card-s4">
+						<a href="#">
+							<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');" alt="..."></span>
+							<span class="cat">
+								<span class="room-status">Đã sử dụng</span>
+							</span>
+							<span class="view-more">Chi tiết</span>
+							<div class="product-status">
+								<span><i class="icon-acreage me-1"></i>50m2</span>
+								<span><i class="icon-bed me-1"></i>2PN</span>
+								<span><i class="icon-bathroom me-1"></i>2WC</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<div class="card-body-wrap">
+								<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Newtatco Xuân Đỉnh</a></h5>
+								<div class="card-info">
+									<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+									<span><i class="icon-time me-2"></i>2 ngày trước</span>
+									<a href="#" class="cat-link text-sub">Nhà riêng</a>
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+								<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card-s card-s4">
+						<a href="#">
+							<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="..."></span>
+							<span class="cat">
+								<span class="room-status">Đã sử dụng</span>
+							</span>
+							<span class="view-more">Chi tiết</span>
+							<div class="product-status">
+								<span><i class="icon-acreage me-1"></i>50m2</span>
+								<span><i class="icon-bed me-1"></i>2PN</span>
+								<span><i class="icon-bathroom me-1"></i>2WC</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<div class="card-body-wrap">
+								<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Newtatco Xuân Đỉnh</a></h5>
+								<div class="card-info">
+									<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+									<span><i class="icon-time me-2"></i>2 ngày trước</span>
+									<a href="#" class="cat-link text-sub">Nhà riêng</a>
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+								<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card-s card-s4">
+						<a href="#">
+							<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="..."></span>
+							<span class="cat">
+								<span class="room-status">Đã sử dụng</span>
+							</span>
+							<span class="view-more">Chi tiết</span>
+							<div class="product-status">
+								<span><i class="icon-acreage me-1"></i>50m2</span>
+								<span><i class="icon-bed me-1"></i>2PN</span>
+								<span><i class="icon-bathroom me-1"></i>2WC</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<div class="card-body-wrap">
+								<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Newtatco Xuân Đỉnh</a></h5>
+								<div class="card-info">
+									<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+									<span><i class="icon-time me-2"></i>2 ngày trước</span>
+									<a href="#" class="cat-link text-sub">Nhà riêng</a>
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+								<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card-s card-s4">
+						<a href="#">
+							<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="..."></span>
+							<span class="cat">
+								<span class="room-status">Đã sử dụng</span>
+							</span>
+							<span class="view-more">Chi tiết</span>
+							<div class="product-status">
+								<span><i class="icon-acreage me-1"></i>50m2</span>
+								<span><i class="icon-bed me-1"></i>2PN</span>
+								<span><i class="icon-bathroom me-1"></i>2WC</span>
+							</div>
+						</a>
+						<div class="card-body">
+							<div class="card-body-wrap">
+								<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2" style="display: -webkit-box;">Newtatco Xuân Đỉnh</a></h5>
+								<div class="card-info">
+									<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
+									<span><i class="icon-time me-2"></i>2 ngày trước</span>
+									<a href="#" class="cat-link text-sub">Nhà riêng</a>
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="card-price">Giá: <span class="current-price">4,3 tỷ</span><span class="old-price">5,6 tỷ</span></div>
+								<a class="card-contact" href="#" title="tư vấn ngay"><i class="icon-chat"></i><span class="ps-2">tư vấn ngay</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div> -->
+	</div>
+</section>
+<!------------------- END PRODUCTs ------------------->
+
+
+<!------------------- PRODUCTs ------------------->
+<section class="rating-sec">
+	<div class="container">
+		<div class="text-center text-lg-start">
+			<div class="primary-title">
+				<h3><span class="cover-title-filled">Đánh giá của</span><span class="position-relative">khách hàng</span></h3>
+			</div>
+		</div>
+		<div class="row g-lg-5">
+			<div class="col-lg-5">
+				<div class="ratings">
+					<div class="rate-title">
+						<h2 class="rate-number">4.5</h2>
+						<div class="rate rate-stars">
+							<ul class="four half">
+								<li><i class="icon-star-empty"></i></li>
+								<li><i class="icon-star-empty"></i></li>
+								<li><i class="icon-star-empty"></i></li>
+								<li><i class="icon-star-empty"></i></li>
+								<li><i class="icon-star-empty"></i></li>
+							</ul>
+							<span>1.200 đánh giá</span>
+						</div>
+					</div>
+					<div class="rate-detail">
+						<div class="rate rate-item">
+							<ul class="five">
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+							</ul>
+							<div class="progress-content">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>75</span>
+							</div>
+						</div>
+						<div class="rate rate-item">
+							<ul class="four">
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+							</ul>
+							<div class="progress-content">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>55</span>
+							</div>
+						</div>
+						<div class="rate rate-item">
+							<ul class="three">
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+							</ul>
+							<div class="progress-content">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 32%" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>32</span>
+							</div>
+						</div>
+						<div class="rate rate-item">
+							<ul class="two">
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+							</ul>
+							<div class="progress-content">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>20</span>
+							</div>
+						</div>
+						<div class="rate rate-item">
+							<ul class="one">
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+								<li><i class="icon-star-fill"></i></li>
+							</ul>
+							<div class="progress-content">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>12</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<div class="comment-box ps-lg-4">
+					<div class="comment-item post">
+						<span class="avatar"><img src="images/space-2.gif" class="thumb w-100" style="background-image: url('previews/brokers/4.jpg');" alt="..."></span>
+						<div class="comment-content">
+							<div class="comment-header">
+								<div class="row justify-content-between align-items-center mb-3 w-100 g-md-0">
+									<div class="col-7">
+										<span class="mb-0">Mức độ hài lòng của bạn</span>
+									</div>
+									<div class="col-5 text-end">
+										<div class="radio-star">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+											<label class="icon-star-fill" for="inlineRadio5"></label>
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+											<label class="icon-star-fill" for="inlineRadio4"></label>
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+											<label class="icon-star-fill" for="inlineRadio3"></label>
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+											<label class="icon-star-fill" for="inlineRadio2"></label>
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+											<label class="icon-star-fill" for="inlineRadio1"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comment-body">
+								<textarea class="form-control" rows="3" placeholder="Viết đánh giá của bạn..."></textarea>
+								<button type="submit" class="btn btn-primary">Gửi</button>
+							</div>
+						</div>
+					</div>
+					<div class="comment-item">
+						<span class="avatar"><img src="images/space-2.gif" class="thumb w-100" style="background-image: url('previews/brokers/1.jpg');" alt="..."></span>
+						<div class="comment-content">
+							<div class="comment-header">
+								<div class="comment-header-user">
+									<span class="username">Phạm Toàn Thắng</span>
+									<div class="rate rate-item">
+										<ul class="five">
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+										</ul>
+									</div>
+								</div>
+								<span class="time"><i class="icon-time me-1"></i>30 phút trước</span>
+							</div>
+							<div class="comment-body">
+								<p>Tôi đang làm việc trong ngành môi giới. Và công ty của tôi cũng thưởng bằng hiện vật: đó là lời hứa sẽ thưởng!</p>
+							</div>
+						</div>
+					</div>
+					<div class="comment-item">
+						<span class="avatar"><img src="images/space-2.gif" class="thumb w-100" style="background-image: url('previews/brokers/2.jpg');" alt="..."></span>
+						<div class="comment-content">
+							<div class="comment-header">
+								<div class="comment-header-user">
+									<span class="username">Nguyễn Hải Long</span>
+									<div class="rate rate-item">
+										<ul class="five">
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+										</ul>
+									</div>
+								</div>
+								<span class="time"><i class="icon-time me-1"></i>30 phút trước</span>
+							</div>
+							<div class="comment-body">
+								<p>Tôi đang làm việc trong ngành môi giới. Và công ty của tôi cũng thưởng bằng hiện vật: đó là lời hứa sẽ thưởng!</p>
+							</div>
+						</div>
+					</div>
+					<div class="comment-item">
+						<span class="avatar"><img src="images/space-2.gif" class="thumb w-100" style="background-image: url('previews/brokers/3.jpg');" alt="..."></span>
+						<div class="comment-content">
+							<div class="comment-header">
+								<div class="comment-header-user">
+									<span class="username">Nguyễn Hồng Nhung</span>
+									<div class="rate rate-item">
+										<ul class="five">
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+											<li><i class="icon-star-fill"></i></li>
+										</ul>
+									</div>
+								</div>
+								<span class="time"><i class="icon-time me-1"></i>30 phút trước</span>
+							</div>
+							<div class="comment-body">
+								<p>Tôi đang làm việc trong ngành môi giới. Và công ty của tôi cũng thưởng bằng hiện vật: đó là lời hứa sẽ thưởng!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!------------------- FOOTER ------------------->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 ft-contact-wrap">
+				<div class="ft-contact">
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>HOTLINE TƯ VẤN</h6>
+							<span><a href="tel:0919511881">0919.51.18.81</a></span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-phone-filled"></i></span>
+					</div>
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>Email</h6>
+							<span><a href="mailto:cskh@nhaongay.vn" class="">cskh@nhaongay.vn</a></span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-mail-filled"></i></span>
+					</div>
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>ĐỊA CHỈ VĂN PHÒNG</h6>
+							<span>61 Ngụy Như Kon Tum, Quận Thanh Xuân, Hà Nội</span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-building-filled"></i></span>
+					</div>
+				</div>
+				<div class="ft-social">
+					<ul class="social">
+						<li><a class=""><i class="icon-facebook"></i></a></li>
+						<li><a class=""><i class="icon-youtube"></i></a></li>
+						<li><a class=""><i class="icon-zalo"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9 ft-main">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<h5 class="line-b">VỀ CHÚNG TÔI</h5>
+							<ul class="ft-link-items">
+								<li><a href="#" class="">Báo giá & Hỗ trợ</a></li>
+								<li><a href="#" class="">Câu hỏi thường gặp</a></li>
+								<li><a href="#" class="">Về chúng tôi</a></li>
+								<li><a href="#" class="">Tin nội bộ</a></li>
+								<li><a href="contact.htm" class="">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<h5 class="line-b">QUY ĐỊNH</h5>
+							<ul class="ft-link-items">
+								<li><a href="#" class="">Quy chế hoạt động</a></li>
+								<li><a href="#" class="">Quy định đăng tin</a></li>
+								<li><a href="#" class="">Điều khoản thỏa thuận</a></li>
+								<li><a href="#" class="">Thành viên và bảo mật</a></li>
+								<li><a href="#" class="">Giải quyết tranh chấp</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<div class="mb-4">
+								<h5 class="line-b">HỖ TRỢ KHÁCH HÀNG</h5>
+								<ul class="ft-link-items">
+									<li><a href="mailto:cskh@nhaongay.vn" class=""><i class="icon-mail me-2"></i>cskh@nhaongay.vn</a></li>
+									<li><a href="tel:0919511881"><i class="icon-call me-2"></i>0919.51.18.81</a></li>
+								</ul>
+							</div>
+							<div class="mb-4">
+								<h5 class="line-b">HỖ TRỢ KỸ THUẬT</h5>
+								<ul class="ft-link-items">
+									<li><a href="mailto:kythuat@nhaongay.vn" class=""><i class="icon-mail me-2"></i>kythuat@nhaongay.vn</a></li>
+									<li><a href="tel:0919511881"><i class="icon-call me-2"></i>0919.51.18.81</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-info">
+							<div class="line-b"><img src="images/lg-ft.svg" alt=""></div>
+							<p class="mb-2">Địa chỉ: 61 Ngụy Như Kon Tum, Quận Thanh Xuân, Hà Nội</p>
+							<p class="mb-2">Điện thoại: 0919.51.18.81</p>
+							<p class="mb-2">MST: 0109481608 - Ngày cấp 05/01/2021</p>
+							<p class="mb-2">Nơi cấp: Sở Kế hoạch và Đầu tư Thành phố Hà Nội, Việt Nam</p>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="row ft-register-subscribe mb-4">
+					<div class="col-lg-6 align-self-center"><span class="line-b">ĐĂNG KÝ NHẬN BẢN TIN TỪ <b>NHÀ Ở NGAY</b></span></div>
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Nhập email của bạn" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="icon-send"></i></button>
+						</div>
+					</div>
+				</div>
+				<p class="ft-copyright text-end">Copyright © 2021 Nhà Ở Ngay, All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!------------------- END: FOOTER ------------------->
+
+<!------------------- JS core------------------->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- <script src="js/swiper-bundle.min.js"></script> -->
+<script src="js/custom.js"></script>
+
+<!-- Initialize Swiper -->
+<!-- <script>
+	var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 320px
+				320: {
+					slidesPerView: 2,
+					spaceBetween: 20
+				},
+				// when window width is >= 480px
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+				// when window width is >= 640px
+				1024: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+					navigation: {
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+					},
+				}
+			},
+			
+			
+			
+		});
+</script> -->
+</body>
+</html>

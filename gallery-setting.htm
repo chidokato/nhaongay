@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Nhà ở ngay</title>
+<meta name="generator" content="Bootply" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+<link rel="icon" type="image/png" sizes="16x16" href="images/jokercoffee/logo.png">
+
+<!------------------- CSS ------------------->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/swiper-bundle.min.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+<link href="css/form.css" rel="stylesheet">
+<link href="css/card.css" rel="stylesheet">
+<link href="css/rating.css" rel="stylesheet">
+<link href="css/widget.css" rel="stylesheet">
+<link href="css/article.css" rel="stylesheet">
+<link href="css/simpleLightbox.css" rel="stylesheet">
+<!------------------- FONT ------------------->
+
+</head>
+
+<body>
+
+<!------------------- NAVIGATOR ------------------->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark" aria-label="Ninth navbar example">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="images/lg-hd.svg" alt="" class="mw-100"></a>
+			<div class="toggle-menu" type="button" data-bs-toggle="button">
+				<button class="navbar-toggler ico-menu" id="navbarToggler">
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+			</div>
+	
+		  <div class="navbar-collapse flex-grow-1" id="navbarsExample07XL">
+			<ul class="collapse navbar-nav mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="homepage.htm"><i class="icon-home"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sales.htm">Mua bán</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="rents.htm">Cho thuê</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="projects.htm">Dự án</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="reviews.htm">Review 4 phương</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="news.htm" data-bs-toggle="dropdown" onclick="myFunctLink(this)">Tin tức</a>
+					<a class="expand dropdown-toggle d-lg-none" href="#" data-bs-toggle="dropdown"></a>
+					<div class="dropdown-menu">
+						<ul>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Tin phong thủy</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Thẩm định giá</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Dịch vụ công chứng</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Quy hoạch đô thị</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="brokers.htm">Nhà môi giới</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="agents.htm">Đại lý</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item cta-btn il">
+				  <a class="nav-link" href="#"><span class="cta-ico"><i class="icon-new"></i></span><span class="cta-text">Đăng tin</span></a>
+				</li>
+				<li class="nav-item nav-icon notification dropdown">
+					<a class="nav-link message" data-bs-toggle="dropdown" href="#"><i class="icon-bell"></i><span class="counter">2</span></a>
+					<div class="dropdown-menu scrollbar">
+						<div class="notify-tool">
+							<a href="#">Đánh đấu đọc tất cả</a>
+							<a href="#" class="view-all">Xem tất cả <i class="icon-next ms-1"></i></a>
+						</div>
+						<div class="widget-list widget-news">
+							<a href="#" class="news-item unread">
+								<span><img src="images/space-2.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item unread">
+								<span><img src="images/space-2.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item nav-icon dropdown">
+					<a class="nav-link" data-bs-toggle="dropdown" href="#"><i class="icon-user"></i></a>
+					<div class="dropdown-menu">
+						<ul>
+							<li><a href="#" class="submenu-link">Quản lý tin đăng</a></li>
+							<li><a href="#" class="submenu-link">Quản lý thông tin</a></li>
+							<li><a href="#" class="submenu-link">Tin quan tâm</a></li>
+							<li><a href="#" class="submenu-link">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</li>
+			  </ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!------------------- END NAVIGATOR ------------------->
+
+
+<!------------------- FILTER SEARCH ------------------->
+<section class="sec-fiter-search floating-label">
+	<div class="container">
+		<form class="row g-3 justify-content-lg-end">
+			<div class="col-lg-3">
+				<div class="input-group search-input">
+					<input type="text" class="form-control" placeholder="nhập từ khóa tìm kiếm">
+					<span class="input-group-text"><i class="icon-search"></i></span>
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="form-floating">
+					<select class="form-select" id="floatingSelectType">
+					  <option selected>Mua bán</option>
+					  <option value="1">...</option>
+					</select>
+					<label for="floatingSelectType">Hình thức</label>
+				  </div>
+			</div>
+			<div class="col-lg-2">
+				<div class="form-floating">
+					<select class="form-select" id="floatingSelectType">
+					  <option selected>Tất cả</option>
+					  <option value="1">...</option>
+					</select>
+					<label for="floatingSelectType">Loại hình</label>
+				  </div>
+			</div>
+			<div class="col-lg-2">
+				<div class="form-floating">
+					<select class="form-select" id="floatingSelectCity">
+					  <option selected>Tất cả</option>
+					  <option value="1">...</option>
+					</select>
+					<label for="floatingSelectGrid">Tỉnh/Thành</label>
+				  </div>
+			</div>
+			<div class="col-lg-2">
+				<div class="form-floating">
+					<select class="form-select" id="floatingSelectDistrict">
+					  <option selected>Tất cả</option>
+					  <option value="1">...</option>
+					</select>
+					<label for="floatingSelectGrid">Quận/Huyện</label>
+				  </div>
+			</div>
+			<div class="col-lg-2">
+				<div class="form-floating">
+					<select class="form-select" id="floatingSelectWard">
+					  <option selected>Tất cả</option>
+					  <option value="1">...</option>
+					</select>
+					<label for="floatingSelectGrid">Mức giá</label>
+				  </div>
+			</div>
+			<div class="col-lg-1"><button type="submit" class="btn btn-circle"><i class="icon-search"></i></button></div>
+		</form>
+	</div>
+</section>
+<!------------------- END: FILTER SEARCH ------------------->
+
+<!------------------- BREADCRUMB ------------------->
+<section class="sec-breadcrumb">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Mua bán</li>
+			</ol>
+		</nav>
+	</div>
+</section>
+<!------------------- END: BREADCRUMB ------------------->
+
+
+
+<!------------------- 1 ITEM ------------------->
+<section class="sec-gallery pt-4">
+	<div class="container">
+		<div class="news-hightlight">
+			<div class="row g-3">
+				<div class="col-lg-12">
+					<a class="card-overlay outline-effect" title="1/1" href="https://images.millenin.com/news/13473/item.1_2018/source/wyndham-soleil-da-nang-banner-636512687342734237.jpg">
+						<span class="card-overlay-img"><img src="images/space-8.gif" alt="" class="w-100" style="background-image: url('https://images.millenin.com/news/13473/item.1_2018/source/wyndham-soleil-da-nang-banner-636512687342734237.jpg');"></span>
+						<div class="card-overlay-body">
+							<div>Căn hộ Roman Plaza</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!------------------- 2 ITEM ------------------->
+<section class="sec-gallery pt-4">
+	<div class="container">
+		<div class="news-hightlight">
+			<div class="row g-3">
+				<div class="col-lg-6">
+					<a class="card-overlay outline-effect" title="1/2" href="https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg">
+						<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg');"></span>
+						<div class="card-overlay-body">
+							<div>Căn hộ Roman Plaza</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<div class="card-overlay-flex">
+						<a class="card-overlay card-overlay-sm outline-effect" title="2/2" href="https://shelter.vn/wp-content/uploads/2021/02/thitruongbdsss.jpg">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://shelter.vn/wp-content/uploads/2021/02/thitruongbdsss.jpg');"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!------------------- 3 ITEM ------------------->
+<section class="sec-gallery pt-4">
+	<div class="container">
+		<div class="news-hightlight">
+			<div class="row g-3">
+				<div class="col-lg-9">
+					<a class="card-overlay outline-effect video" title="1/3" href="https://www.youtube.com/embed/wLRe4rJzdgY?autoplay=true&muted=true">
+						<span class="card-overlay-img"><img src="images/space-9.gif" alt="" class="w-100" style="background-image: url('https://images.millenin.com/news/13473/item.1_2018/source/wyndham-soleil-da-nang-banner-636512687342734237.jpg');"></span>
+						<div class="card-overlay-body">
+							<div>Căn hộ Roman Plaza</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<div class="card-overlay-flex">
+						<a class="card-overlay card-overlay-sm outline-effect" title="2/3" href="https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');"></span>
+						</a>
+						<a class="card-overlay card-overlay-sm outline-effect" title="3/3" href="https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg');"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!------------------- 4 ITEM ------------------->
+<section class="sec-gallery pt-4">
+	<div class="container">
+		<div class="news-hightlight">
+			<div class="row g-3">
+				<div class="col-lg-9">
+					<div class="row g-3">
+						<div class="col-lg-6">
+							<a class="card-overlay outline-effect video" title="1/4" href="https://www.youtube.com/embed/wLRe4rJzdgY?autoplay=true&muted=true">
+								<span class="card-overlay-img"><img src="images/space-10.gif" alt="" class="w-100" style="background-image: url('https://shelter.vn/wp-content/uploads/2021/02/thitruongbdsss.jpg');"></span>
+								<div class="card-overlay-body">
+									<div>Căn hộ Roman Plaza</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-6">
+							<div class="card-overlay-flex">
+								<a class="card-overlay card-overlay-sm outline-effect" title="2/4" href="https://angialand.com.vn/wp-content/uploads/2020/06/phoi-canh-du-an-can-ho-chung-cu-park-vista-duong-nguyen-huu-tho-nha-be.jpg">
+									<span class="card-overlay-img"><img src="images/space-10.gif" alt="" class="w-100" style="background-image: url('https://angialand.com.vn/wp-content/uploads/2020/06/phoi-canh-du-an-can-ho-chung-cu-park-vista-duong-nguyen-huu-tho-nha-be.jpg');"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="card-overlay-flex">
+						<a class="card-overlay card-overlay-sm outline-effect" title="3/4" href="https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');"></span>
+						</a>
+						<a class="card-overlay card-overlay-sm outline-effect" title="4/4" href="https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg');"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!------------------- 5 ITEM------------------->
+<section class="sec-gallery pt-4">
+	<div class="container">
+		<div class="news-hightlight">
+			<div class="row g-3">
+				<div class="col-lg-6">
+					<a class="card-overlay outline-effect video" title="1/5" href="https://www.youtube.com/embed/wLRe4rJzdgY?autoplay=true&muted=true">
+						<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://top10tphcm.com/wp-content/uploads/2018/06/New-city-min.jpg');"></span>
+						<div class="card-overlay-body">
+							<div>Căn hộ Roman Plaza</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<div class="card-overlay-flex">
+						<a class="card-overlay card-overlay-sm outline-effect" title="2/5" href="https://shelter.vn/wp-content/uploads/2021/02/thitruongbdsss.jpg">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://shelter.vn/wp-content/uploads/2021/02/thitruongbdsss.jpg');"></span>
+						</a>
+						<a class="card-overlay card-overlay-sm outline-effect" title="3/5" href="https://angialand.com.vn/wp-content/uploads/2020/06/phoi-canh-du-an-can-ho-chung-cu-park-vista-duong-nguyen-huu-tho-nha-be.jpg">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://angialand.com.vn/wp-content/uploads/2020/06/phoi-canh-du-an-can-ho-chung-cu-park-vista-duong-nguyen-huu-tho-nha-be.jpg');"></span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="card-overlay-flex">
+						<a class="card-overlay card-overlay-sm outline-effect" title="4/5" href="https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');"></span>
+						</a>
+						<a class="card-overlay card-overlay-sm outline-effect" title="5/5" href="https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg');"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!------------------- MORE ------------------->
+<section class="sec-gallery pt-4">
+	<div class="container">
+		<div class="news-hightlight">
+			<div class="row g-3">
+				<div class="col-lg-6">
+					<a class="card-overlay outline-effect video" title="1/10" href="https://www.youtube.com/embed/wLRe4rJzdgY?autoplay=true&muted=true">
+						<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://top10tphcm.com/wp-content/uploads/2018/06/New-city-min.jpg');"></span>
+						<div class="card-overlay-body">
+							<div>Căn hộ Roman Plaza</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<div class="card-overlay-flex">
+						<a class="card-overlay card-overlay-sm outline-effect" title="2/10" href="https://shelter.vn/wp-content/uploads/2021/02/thitruongbdsss.jpg">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://shelter.vn/wp-content/uploads/2021/02/thitruongbdsss.jpg');"></span>
+						</a>
+						<a class="card-overlay card-overlay-sm outline-effect" title="3/10" href="https://angialand.com.vn/wp-content/uploads/2020/06/phoi-canh-du-an-can-ho-chung-cu-park-vista-duong-nguyen-huu-tho-nha-be.jpg">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://angialand.com.vn/wp-content/uploads/2020/06/phoi-canh-du-an-can-ho-chung-cu-park-vista-duong-nguyen-huu-tho-nha-be.jpg');"></span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="card-overlay-flex">
+						<a class="card-overlay card-overlay-sm outline-effect" title="4/10" href="https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');"></span>
+						</a>
+						<a class="card-overlay card-overlay-sm outline-effect more" title="5/10" href="https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg');"></span>
+							<i class="btn-plus"></i>
+						</a>
+					</div>
+					<div class="more-item">
+						<a class="card-overlay" title="6/10" href="https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png"></a>
+						<a class="card-overlay" title="7/10" href="https://shelter.vn/wp-content/uploads/2021/02/thitruongbdsss.jpg"></a>
+						<a class="card-overlay" title="8/10" href="https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg"></a>
+						<a class="card-overlay" title="9/10" href="https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png"></a>
+						<a class="card-overlay" title="10/10" href="https://blog.rever.vn/hubfs/chinh-sach-ho-tro-tai-chinh-kich-cau-thi-truong-bat-dong-san-cuoi-nam-1.jpg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!------------------- GALLERY MOBILE ------------------->
+<section class="sec-gallery pt-4 d-md-none">
+	<div class="container">
+		<div class="position-relative grid-view mb-4 pb-lg-4">
+			<div class="swiper gallery-mobile">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a class="card-overlay outline-effect video" title="1/10" href="https://www.youtube.com/embed/wLRe4rJzdgY?autoplay=true&muted=true">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://top10tphcm.com/wp-content/uploads/2018/06/New-city-min.jpg');"></span>
+							<div class="card-overlay-body">
+								<div>Căn hộ Roman Plaza</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="card-overlay card-overlay-sm outline-effect" title="2/10" href="https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');"></span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="card-overlay card-overlay-sm outline-effect" title="3/10" href="https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');"></span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="card-overlay card-overlay-sm outline-effect" title="4/10" href="https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png">
+							<span class="card-overlay-img"><img src="images/space-4.gif" alt="" class="w-100" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');"></span>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!------------------- FOOTER ------------------->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 ft-contact-wrap">
+				<div class="ft-contact">
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>HOTLINE TƯ VẤN</h6>
+							<span><a href="tel:0919511881">0919.51.18.81</a></span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-phone-filled"></i></span>
+					</div>
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>Email</h6>
+							<span><a href="mailto:cskh@nhaongay.vn" class="">cskh@nhaongay.vn</a></span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-mail-filled"></i></span>
+					</div>
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>ĐỊA CHỈ VĂN PHÒNG</h6>
+							<span>61 Ngụy Như Kon Tum, Quận Thanh Xuân, Hà Nội</span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-building-filled"></i></span>
+					</div>
+				</div>
+				<div class="ft-social">
+					<ul class="social">
+						<li><a class=""><i class="icon-facebook"></i></a></li>
+						<li><a class=""><i class="icon-youtube"></i></a></li>
+						<li><a class=""><i class="icon-zalo"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9 ft-main">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<h5 class="line-b">VỀ CHÚNG TÔI</h5>
+							<ul class="ft-link-items">
+								<li><a href="#" class="">Báo giá & Hỗ trợ</a></li>
+								<li><a href="#" class="">Câu hỏi thường gặp</a></li>
+								<li><a href="#" class="">Về chúng tôi</a></li>
+								<li><a href="#" class="">Tin nội bộ</a></li>
+								<li><a href="contact.htm" class="">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<h5 class="line-b">QUY ĐỊNH</h5>
+							<ul class="ft-link-items">
+								<li><a href="#" class="">Quy chế hoạt động</a></li>
+								<li><a href="#" class="">Quy định đăng tin</a></li>
+								<li><a href="#" class="">Điều khoản thỏa thuận</a></li>
+								<li><a href="#" class="">Thành viên và bảo mật</a></li>
+								<li><a href="#" class="">Giải quyết tranh chấp</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<div class="mb-4">
+								<h5 class="line-b">HỖ TRỢ KHÁCH HÀNG</h5>
+								<ul class="ft-link-items">
+									<li><a href="mailto:cskh@nhaongay.vn" class=""><i class="icon-mail me-2"></i>cskh@nhaongay.vn</a></li>
+									<li><a href="tel:0919511881"><i class="icon-call me-2"></i>0919.51.18.81</a></li>
+								</ul>
+							</div>
+							<div class="mb-4">
+								<h5 class="line-b">HỖ TRỢ KỸ THUẬT</h5>
+								<ul class="ft-link-items">
+									<li><a href="mailto:kythuat@nhaongay.vn" class=""><i class="icon-mail me-2"></i>kythuat@nhaongay.vn</a></li>
+									<li><a href="tel:0919511881"><i class="icon-call me-2"></i>0919.51.18.81</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-info">
+							<div class="line-b"><img src="images/lg-ft.svg" alt=""></div>
+							<p class="mb-2">Địa chỉ: 61 Ngụy Như Kon Tum, Quận Thanh Xuân, Hà Nội</p>
+							<p class="mb-2">Điện thoại: 0919.51.18.81</p>
+							<p class="mb-2">MST: 0109481608 - Ngày cấp 05/01/2021</p>
+							<p class="mb-2">Nơi cấp: Sở Kế hoạch và Đầu tư Thành phố Hà Nội, Việt Nam</p>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="row ft-register-subscribe mb-4">
+					<div class="col-lg-6 align-self-center"><span class="line-b">ĐĂNG KÝ NHẬN BẢN TIN TỪ <b>NHÀ Ở NGAY</b></span></div>
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Nhập email của bạn" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="icon-send"></i></button>
+						</div>
+					</div>
+				</div>
+				<p class="ft-copyright text-end">Copyright © 2021 Nhà Ở Ngay, All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!------------------- END: FOOTER ------------------->
+
+<!------------------- JS core------------------->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/simpleLightbox.min.js"></script>
+
+<script>
+		var swiper = new Swiper(".swiper.gallery-mobile", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			pagination: {
+				el: ".swiper.gallery-mobile .swiper-pagination",
+				clickable: true,
+			},	
+		});
+
+
+		var lightbox = new SimpleLightbox({
+			elements: '.sec-gallery .card-overlay',
+		});
+</script>
+</body>
+</html>

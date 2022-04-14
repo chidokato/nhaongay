@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Nhà ở ngay</title>
+<meta name="generator" content="Bootply" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+<link rel="icon" type="image/png" sizes="16x16" href="images/jokercoffee/logo.png">
+
+<!------------------- CSS ------------------->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/swiper-bundle.min.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+<link href="css/widget.css" rel="stylesheet">
+<link href="css/card.css" rel="stylesheet">
+<link href="css/article.css" rel="stylesheet">
+ 
+
+<!------------------- FONT ------------------->
+
+
+</head>
+
+<body>
+
+<!------------------- NAVIGATOR ------------------->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark" aria-label="Ninth navbar example">
+		<div class="container">
+		  <a class="navbar-brand" href="#"><img src="images/lg-hd.svg" alt="" class="mw-100"></a>
+		  <div class="toggle-menu" type="button" data-bs-toggle="button">
+				<button class="navbar-toggler ico-menu" id="navbarToggler">
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+			</div>
+	
+		  <div class="navbar-collapse flex-grow-1" id="navbarsExample07XL">
+			<ul class="collapse navbar-nav mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="homepage.htm"><i class="icon-home"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sales.htm">Mua bán</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="rents.htm">Cho thuê</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="projects.htm">Dự án</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="reviews.htm">Review 4 phương</a>
+				</li>
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="news.htm" data-bs-toggle="dropdown" onclick="myFunctLink(this)">Tin tức</a>
+					<a class="expand dropdown-toggle d-lg-none" href="#" data-bs-toggle="dropdown"></a>
+					<div class="dropdown-menu">
+						<ul>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Tin phong thủy</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Thẩm định giá</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Dịch vụ công chứng</a></li>
+							<li><a href="#" class="submenu-link"><i class="icon-next me-2"></i>Quy hoạch đô thị</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="brokers.htm">Nhà môi giới</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="agents.htm">Đại lý</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item cta-btn il">
+				  <a class="nav-link" href="#"><span class="cta-ico"><i class="icon-new"></i></span><span class="cta-text">Đăng tin</span></a>
+				</li>
+				<li class="nav-item nav-icon notification dropdown">
+					<a class="nav-link message" data-bs-toggle="dropdown" href="#"><i class="icon-bell"></i><span class="counter">2</span></a>
+					<div class="dropdown-menu scrollbar">
+						<div class="notify-tool">
+							<a href="#">Đánh đấu đọc tất cả</a>
+							<a href="#" class="view-all">Xem tất cả <i class="icon-next ms-1"></i></a>
+						</div>
+						<div class="widget-list widget-news">
+							<a href="#" class="news-item unread">
+								<span><img src="images/space-2.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item unread">
+								<span><img src="images/space-2.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+							<a href="#" class="news-item">
+								<span><img src="images/space-2.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+								<div class="news-item-body">
+									<p class="mb-0 text-truncate-set text-truncate-set-3">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+									<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item nav-icon dropdown">
+					<a class="nav-link" data-bs-toggle="dropdown" href="#"><i class="icon-user"></i></a>
+					<div class="dropdown-menu">
+						<ul>
+							<li><a href="#" class="submenu-link">Quản lý tin đăng</a></li>
+							<li><a href="#" class="submenu-link">Quản lý thông tin</a></li>
+							<li><a href="#" class="submenu-link">Tin quan tâm</a></li>
+							<li><a href="#" class="submenu-link">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</li>
+			  </ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+<!------------------- END NAVIGATOR ------------------->
+
+<!------------------- BREADCRUMB ------------------->
+<section class="sec-breadcrumb">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+			<li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Thị trường bất động sản</li>
+			</ol>
+		</nav>
+	</div>
+</section>
+<!------------------- END: BREADCRUMB ------------------->
+
+
+<!------------------- CARD ------------------->
+<section class="card-grid news-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+				<div class="label-subpage"><span>Thị trường bất động sản</span></div>
+				<div class="title-subpage">
+					<div class="time-box">
+						<span>21/10</span>
+						<span><i class="icon-time me-1"></i>2022</span>
+					</div>
+					<h1>Nhà tiền chế cấp 4 - xu hướng thiết kế nhà ở HOT năm 2022</h1>
+				</div>
+				<div class="main-content">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="share-social affix">
+								<span><small>Share</small></span>
+								<ul>
+									<li><a href="#"><i class="icon-facebook"></i></a></li>
+									<li><a href="#"><i class="icon-zalo"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-10">
+							<div class="main-article">
+								<div class="description">
+									Thiết kế nhà tiền chế cấp 4 đang tạo nên một “ làn sóng” mạnh mẽ trên thị trường xây dựng hiện nay. Bởi thiết kế linh hoạt, chi phí rẻ và tính thẩm mỹ cao phù hợp với điều kiện thu nhập của mọi gia đình. Cùng “Nhà ở ngay”, đi khám phá những đặc điểm thú vị về mẫu nhà tiền chế cấp 4 nhé!
+								</div>
+
+								<h2 class="third-title line-b">1. Vì sao mẫu nhà tiền chế cấp 4 đang được ưa chuộng?</h2>
+								<p>Mật độ xây dựng là gì? Dựa vào quy định tại “Quy chuẩn kỹ thuật Quốc gia về Quy hoạch xây dựng” thì mật độ xây dựng chính là tỉ lệ chiếm đất của các công trình trên tổng diện tích khu đất. (Không bao gồm diện tích đất của các công trình khác như: bể bơi, tiểu cảnh, sân thể thao…….).</p>
+								<p>Đặc biệt, mật độ xây dựng là chỉ số trực quan nhất giúp chúng ta so sánh được quỹ đất cho cư dân sinh hoạt. Việc tuân thủ mật độ xây dựng, sẽ đảm bảo được không gian sinh hoạt khoa học, đúng với nhu cầu sử dụng. Hơn nữa, mật độ xây dựng chính là thước đo quan trọng đánh giá sự văn minh và giá trị của các công trình xây dựng, khu đô thị và khu dân cư.</p>
+								<p class=""><img src="https://investone-law.com/wp-content/uploads/2018/10/kinh-doanh-bat-dong-san.jpg" alt="" class="mw-100 mx-auto my-4 rounded d-block"></p>
+
+								<h2 class="third-title line-b">2. Nhà tiền chế cấp 4 nhiều phòng ngủ</h2>
+								<p>Mật độ xây dựng là gì? Dựa vào quy định tại “Quy chuẩn kỹ thuật Quốc gia về Quy hoạch xây dựng” thì mật độ xây dựng chính là tỉ lệ chiếm đất của các công trình trên tổng diện tích khu đất. (Không bao gồm diện tích đất của các công trình khác như: bể bơi, tiểu cảnh, sân thể thao…….).</p>
+								<p>Đặc biệt, mật độ xây dựng là chỉ số trực quan nhất giúp chúng ta so sánh được quỹ đất cho cư dân sinh hoạt. Việc tuân thủ mật độ xây dựng, sẽ đảm bảo được không gian sinh hoạt khoa học, đúng với nhu cầu sử dụng. Hơn nữa, mật độ xây dựng chính là thước đo quan trọng đánh giá sự văn minh và giá trị của các công trình xây dựng, khu đô thị và khu dân cư.</p>
+								<p class=""><img src="https://baoquocte.vn/stores/news_dataimages/quangtung/082021/10/20/4246_228221946_550497939486560_5559808499518523630_n.jpg?rt=20210810204248" alt="" class="mw-100 mx-auto my-4 rounded d-block"></p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="tags">
+					<span>tags</span>
+					<ul>
+						<li><a href="#">Bất động sản</a></li>
+						<li><a href="#">Thị trường</a></li>
+						<li><a href="#">Nhà ở ngay</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 d-none d-lg-block">
+
+				<div class="widget widget-list mb-3">
+					<h4><span>Tin tức</span></h4>
+					<ul>
+						<li><a href="#"><i class="icon-next me-2"></i>Thị trường bất động sản</a></li>
+						<li><a href="#"><i class="icon-next me-2"></i>Tư vấn tài chính</a></li>
+						<li><a href="#"><i class="icon-next me-2"></i>Tư vấn phong thủy</a></li>
+						<li><a href="#"><i class="icon-next me-2"></i>Dịch vụ công chứng</a></li>
+						<li><a href="#"><i class="icon-next me-2"></i>Thẩm định giá</a></li>
+						<li><a href="#"><i class="icon-next me-2"></i>Luật, thủ tục mua bán</a></li>
+						<li><a href="#"><i class="icon-next me-2"></i>Quy hoạch đô thị</a></li>
+					</ul>
+				</div>
+
+				<div class="widget widget-subscribe mb-4">
+					<img src="images/subscribe.jpg" alt="" class="mw-100">
+					<div class="subscribe-form">
+						<h5>ĐĂNG KÝ NHẬN BẢN TIN <br><span>NHÀ Ở NGAY</span></h5>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Nhập email của bạn" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="icon-send"></i></button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="widget widget-list widget-news mb-3">
+					<h4><span>Review 4 phương</span></h4>
+					<a href="#" class="news-item-captain">
+						<div class="news-item-captain-img">
+							<div class="news-item-captain-img-wrap">
+								<img src="images/space-3.gif" style="background-image: url('https://sayhi.vn/blog/wp-content/uploads/2019/09/image7-1.png');" alt="" class="w-100">
+								<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+								<span class="view-more">Chi tiết</span>
+							</div>
+						</div>
+						<div class="news-item-captain-body">
+							<h5>Review phường Hoàng Liệt bản đồ, vị trí, các tiện ịch xung quanh</h5>
+							<p class="mb-0  text-truncate-set text-truncate-set-2">Chính chủ cần chuyển nhượng gấp căn 2 ngủ diện tích thông thủy 78m2 full đồ, khách mua chỉ cần dọn quần áo đến có thể ở ngay</p>
+						</div>
+					</a>
+					<a href="#" class="news-item">
+						<span><img src="images/space-3.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+						<div class="news-item-body">
+							<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+							<p class="mb-0 text-truncate-set text-truncate-set-2">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+						</div>
+					</a>
+					<a href="#" class="news-item">
+						<span><img src="images/space-3.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+						<div class="news-item-body">
+							<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+							<p class="mb-0 text-truncate-set text-truncate-set-2">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+						</div>
+					</a>
+					<a href="#" class="news-item">
+						<span><img src="images/space-3.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+						<div class="news-item-body">
+							<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+							<p class="mb-0 text-truncate-set text-truncate-set-2">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+						</div>
+					</a>
+					<a href="#" class="news-item">
+						<span><img src="images/space-3.gif" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="" class="w-100"></span>
+						<div class="news-item-body">
+							<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+							<p class="mb-0 text-truncate-set text-truncate-set-2">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+						</div>
+					</a>
+					<a href="#" class="news-item">
+						<span><img src="images/space-3.gif" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="" class="w-100"></span>
+						<div class="news-item-body">
+							<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+							<p class="mb-0 text-truncate-set text-truncate-set-2">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+						</div>
+					</a>
+					<a href="#" class="news-item">
+						<span><img src="images/space-3.gif" style="background-image: url('https://truongvietnam.net/wp-content/uploads/2021/10/Nganh-bat-dong-san.png');" alt="" class="w-100"></span>
+						<div class="news-item-body">
+							<span class="date"><i class="icon-time me-1"></i>2 ngày trước</span>
+							<p class="mb-0 text-truncate-set text-truncate-set-2">Chính chủ cần chuyển nhượng gấp căn hộ diện tích 80m2</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		
+	</div>
+</section>
+<!------------------- END CARD ------------------->
+
+<!------------------- RELATED ------------------->
+<div class="related-sec">
+	<div class="container">
+		<div class="related">
+			<div class="text-center">
+				<div class="primary-title">
+					<h3><span class="cover-title-filled">Tin tức</span><span class="position-relative">Liên quan</span></h3>
+				</div>
+			</div>
+			<div class="position-relative">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="card card-s card-s4">
+							<a href="#">
+								<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="..."></span>
+								<span class="view-more">Chi tiết</span>
+							</a>
+							<div class="card-body">
+								<div class="card-body-wrap">
+									<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2">Nhà tiền chế cấp 4 nhiều phòng ngủ</a></h5>
+									<div class="card-info">
+										<span><i class="icon-time me-2"></i>15/02/2022</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<p class="text-truncate-set text-truncate-set-2 mb-0">Vì sao giá bất động sản ven sông lại có biên độ tăng giá tốt nhất TP.HCM hiện nay?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-s card-s4">
+							<a href="#">
+								<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://baoquocte.vn/stores/news_dataimages/quangtung/082021/10/20/4246_228221946_550497939486560_5559808499518523630_n.jpg?rt=20210810204248');" alt="..."></span>
+								<span class="view-more">Chi tiết</span>
+							</a>
+							<div class="card-body">
+								<div class="card-body-wrap">
+									<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2">Nhà tiền chế cấp 4 nhiều phòng ngủ</a></h5>
+									<div class="card-info">
+										<span><i class="icon-time me-2"></i>15/02/2022</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<p class="text-truncate-set text-truncate-set-2 mb-0">Vì sao giá bất động sản ven sông lại có biên độ tăng giá tốt nhất TP.HCM hiện nay?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-s card-s4">
+							<a href="#">
+								<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="..."></span>
+								<span class="view-more">Chi tiết</span>
+							</a>
+							<div class="card-body">
+								<div class="card-body-wrap">
+									<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2">Nhà tiền chế cấp 4 nhiều phòng ngủ</a></h5>
+									<div class="card-info">
+										<span><i class="icon-time me-2"></i>15/02/2022</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<p class="text-truncate-set text-truncate-set-2 mb-0">Vì sao giá bất động sản ven sông lại có biên độ tăng giá tốt nhất TP.HCM hiện nay?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-s card-s4">
+							<a href="#">
+								<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://eaglereal.net/wp-content/uploads/2020/04/phoi-canh-du-an-green-square-1024x768.jpg');" alt="..."></span>
+								<span class="view-more">Chi tiết</span>
+							</a>
+							<div class="card-body">
+								<div class="card-body-wrap">
+									<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2">Nhà tiền chế cấp 4 nhiều phòng ngủ</a></h5>
+									<div class="card-info">
+										<span><i class="icon-time me-2"></i>15/02/2022</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<p class="text-truncate-set text-truncate-set-2 mb-0">Vì sao giá bất động sản ven sông lại có biên độ tăng giá tốt nhất TP.HCM hiện nay?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-s card-s4">
+							<a href="#">
+								<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://baoquocte.vn/stores/news_dataimages/quangtung/082021/10/20/4246_228221946_550497939486560_5559808499518523630_n.jpg?rt=20210810204248');" alt="..."></span>
+								<span class="view-more">Chi tiết</span>
+							</a>
+							<div class="card-body">
+								<div class="card-body-wrap">
+									<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2">Nhà tiền chế cấp 4 nhiều phòng ngủ</a></h5>
+									<div class="card-info">
+										<span><i class="icon-time me-2"></i>15/02/2022</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<p class="text-truncate-set text-truncate-set-2 mb-0">Vì sao giá bất động sản ven sông lại có biên độ tăng giá tốt nhất TP.HCM hiện nay?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card card-s card-s4">
+							<a href="#">
+								<span><img src="images/space-3.gif" class="card-img-top" style="background-image: url('https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg');" alt="..."></span>
+								<span class="view-more">Chi tiết</span>
+							</a>
+							<div class="card-body">
+								<div class="card-body-wrap">
+									<h5 class="card-title"><a href="#" class="text-truncate-set text-truncate-set-2">Nhà tiền chế cấp 4 nhiều phòng ngủ</a></h5>
+									<div class="card-info">
+										<span><i class="icon-time me-2"></i>15/02/2022</span>
+									</div>
+								</div>
+								<div class="card-text">
+									<p class="text-truncate-set text-truncate-set-2 mb-0">Vì sao giá bất động sản ven sông lại có biên độ tăng giá tốt nhất TP.HCM hiện nay?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!------------------- END RELATED ------------------->
+
+
+<!------------------- FOOTER ------------------->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 ft-contact-wrap">
+				<div class="ft-contact">
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>HOTLINE TƯ VẤN</h6>
+							<span><a href="tel:0919511881">0919.51.18.81</a></span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-phone-filled"></i></span>
+					</div>
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>Email</h6>
+							<span><a href="mailto:cskh@nhaongay.vn" class="">cskh@nhaongay.vn</a></span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-mail-filled"></i></span>
+					</div>
+					<div class="ft-contact-item">
+						<div class="ft-contact-item-text">
+							<h6>ĐỊA CHỈ VĂN PHÒNG</h6>
+							<span>61 Ngụy Như Kon Tum, Quận Thanh Xuân, Hà Nội</span>
+						</div>
+						<span class="ft-contact-item-ico"><i class="icon-building-filled"></i></span>
+					</div>
+				</div>
+				<div class="ft-social">
+					<ul class="social">
+						<li><a class=""><i class="icon-facebook"></i></a></li>
+						<li><a class=""><i class="icon-youtube"></i></a></li>
+						<li><a class=""><i class="icon-zalo"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9 ft-main">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<h5 class="line-b">VỀ CHÚNG TÔI</h5>
+							<ul class="ft-link-items">
+								<li><a href="#" class="">Báo giá & Hỗ trợ</a></li>
+								<li><a href="#" class="">Câu hỏi thường gặp</a></li>
+								<li><a href="#" class="">Về chúng tôi</a></li>
+								<li><a href="#" class="">Tin nội bộ</a></li>
+								<li><a href="contact.htm" class="">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<h5 class="line-b">QUY ĐỊNH</h5>
+							<ul class="ft-link-items">
+								<li><a href="#" class="">Quy chế hoạt động</a></li>
+								<li><a href="#" class="">Quy định đăng tin</a></li>
+								<li><a href="#" class="">Điều khoản thỏa thuận</a></li>
+								<li><a href="#" class="">Thành viên và bảo mật</a></li>
+								<li><a href="#" class="">Giải quyết tranh chấp</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-link">
+							<div class="mb-4">
+								<h5 class="line-b">HỖ TRỢ KHÁCH HÀNG</h5>
+								<ul class="ft-link-items">
+									<li><a href="mailto:cskh@nhaongay.vn" class=""><i class="icon-mail me-2"></i>cskh@nhaongay.vn</a></li>
+									<li><a href="tel:0919511881"><i class="icon-call me-2"></i>0919.51.18.81</a></li>
+								</ul>
+							</div>
+							<div class="mb-4">
+								<h5 class="line-b">HỖ TRỢ KỸ THUẬT</h5>
+								<ul class="ft-link-items">
+									<li><a href="mailto:kythuat@nhaongay.vn" class=""><i class="icon-mail me-2"></i>kythuat@nhaongay.vn</a></li>
+									<li><a href="tel:0919511881"><i class="icon-call me-2"></i>0919.51.18.81</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="ft-info">
+							<div class="line-b"><img src="images/lg-ft.svg" alt=""></div>
+							<p class="mb-2">Địa chỉ: 61 Ngụy Như Kon Tum, Quận Thanh Xuân, Hà Nội</p>
+							<p class="mb-2">Điện thoại: 0919.51.18.81</p>
+							<p class="mb-2">MST: 0109481608 - Ngày cấp 05/01/2021</p>
+							<p class="mb-2">Nơi cấp: Sở Kế hoạch và Đầu tư Thành phố Hà Nội, Việt Nam</p>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="row ft-register-subscribe mb-4">
+					<div class="col-lg-6 align-self-center"><span class="line-b">ĐĂNG KÝ NHẬN BẢN TIN TỪ <b>NHÀ Ở NGAY</b></span></div>
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Nhập email của bạn" aria-describedby="button-addon2">
+							<button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="icon-send"></i></button>
+						</div>
+					</div>
+				</div>
+				<p class="ft-copyright text-end">Copyright © 2021 Nhà Ở Ngay, All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!------------------- END: FOOTER ------------------->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/custom.js"></script>
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 320px
+				320: {
+					slidesPerView: 2,
+					spaceBetween: 20
+				},
+				// when window width is >= 480px
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+				// when window width is >= 640px
+				1024: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+					navigation: {
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+					},
+				}
+			},	
+		});
+</script>
+
+</body>
+</html>
