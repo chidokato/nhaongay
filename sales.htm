@@ -20,7 +20,7 @@
 <link href="css/sort.css" rel="stylesheet">
 <link href="css/card.css" rel="stylesheet">
 <link href="css/tuan.css" rel="stylesheet">
- 
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
 <!------------------- FONT ------------------->
 
@@ -187,8 +187,8 @@
 						</div>
 						<div class="col-lg">
 							<div class="form-floating">
-								<select class="form-select" id="floatingSelectCity">
-								  <option selected>Tất cả</option>
+								<select class="form-select select2" id="floatingSelectCity">
+								  <option selected>Tất cả 1q</option>
 								  <option value="1">...</option>
 								</select>
 								<label for="floatingSelectGrid">Tỉnh/Thành</label>
@@ -340,7 +340,7 @@
 							</a>
 							<div class="card-body">
 								<div class="card-body-wrap">
-									<h5 class="card-title"><a href="#" class="text-truncate">Newtatco Xuân Đỉnh</a></h5>
+									<h5 class="card-title"><a href="#" class="text-truncate">NEWS HATECO XUÂN ĐỈNH</a></h5>
 									<div class="card-info">
 										<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
 										<span><i class="icon-time me-2"></i>2 ngày trước</span>
@@ -372,7 +372,7 @@
 							</a>
 							<div class="card-body">
 								<div class="card-body-wrap">
-									<h5 class="card-title"><a href="#" class="text-truncate">Newtatco Xuân Đỉnh</a></h5>
+									<h5 class="card-title"><a href="#" class="text-truncate">NEWS HATECO XUÂN ĐỈNH</a></h5>
 									<div class="card-info">
 										<span><i class="icon-location me-2"></i>Nam Từ Liêm, Hà Nội</span>
 										<span><i class="icon-time me-2"></i>2 ngày trước</span>
@@ -875,7 +875,12 @@
 			})
 		}
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+    	$('.select2').select2();
+});
+</script>
 
 </body>
 </html>

@@ -23,7 +23,7 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 }
 .scrollDown header .navbar-expand-lg .navbar-nav .nav-link{
 	font-size: 13px;
-    padding: 26px 11px;
+    padding-left: 11px;padding-right: 11px;
 }
 
 .widget-broker.card-s3 .card-body {
@@ -31,11 +31,15 @@ header .navbar-expand-lg .navbar-nav .nav-link {
     padding-top: 155px;
 }
 .product-price {
-    top: 60px;
+    top: 60px; background: none;
+}
+.product-price .old-price {
+    background-color: var(--main-color);
 }
 .product-contact {
-    top: 220px;
+    margin-top: 5px;
 }
+
 header .navbar-expand-lg .navbar-nav.ml-auto .nav-icon.notification .dropdown-menu .notify-tool a{
 	border: none;
     color: #fff;
@@ -89,7 +93,15 @@ header .navbar-expand-lg .navbar-nav.ml-auto .nav-icon.notification .dropdown-me
 }
 .card-s .card-title a {
     font-size: 1rem;
+    text-transform: lowercase;
 }
+.card-s .card-title a::first-letter{
+	text-transform: uppercase;
+}
+.grid-view .card-s .card-title::first-letter{
+	text-transform: uppercase;
+}
+
 .sec-product-hot .card-s > a .card-price .current-price {
     padding: 13px 10px 13px 4px;
 }
@@ -103,10 +115,67 @@ header .navbar-expand-lg .navbar-nav.ml-auto .nav-icon.notification .dropdown-me
 }
 .card-body-new .card-price{
 	display: flex;
-	flex-direction: column;padding-right: 10px;align-items: flex-end;
+	flex-direction: column;border-right: 1px solid #ddd;padding-right: 10px;align-items: flex-end;
 }
-.scrollDown header .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 19px 11px;
+.service-item {
+    width: 15%;margin-right: 35px;
+}
+.sec-service-hp .swiper-slide {
+    margin-bottom: 38px;
+}
+.main-content .main-article h3{
+	font-size: 1.2rem;
+}
+.widget-list .scrollspy > a{
+	text-transform: inherit;
+}
+.download{ display: flex; margin-bottom: 30px; margin-top: -32px; }
+.download button{ background: none; border: none; padding: 10px; padding-left: 0px; text-transform: uppercase; }
+.download button i{ border: 1px solid #0a5597; padding: 12px; border-radius: 100px;margin-right: 5px; color: #0a5597;  }
+.download button:hover{ color: #0d6efd; }
+.download button:hover i{ background: #e0781c; color: #fff; border: 1px solid #e0781c; }
+.download button span{
+	position: relative;
+}
+.download button span::after {
+    width: 35px;
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: var(--sub-color);
+    left: 0px;
+    bottom: -5px;
+}
+.download .csbh{ margin-right: 25px; padding: 20px 15px 10px 0px; border-right: 1px solid #ddd; }
+.download .tdtt{ padding: 20px 15px 10px 0px; }
+.sec-why-choose-us .col-6{ width: 23%; }
+.sec-why-choose-us .row{ display: flex; justify-content: space-between; }
+.dropdown-menu {
+    opacity: .95;
+}
+.main-content .main-article h2{font-size: 18px; margin-bottom: 6px;}
+.main-content .main-article h3{font-size: 16px;}
+.main-content .main-article p{font-size: 14px; margin-bottom: .5rem; text-align: justify;}
+.main-content .main-article ul{ margin-bottom: .5rem; padding-left: 17px; }
+.main-content .main-article ul li{ font-size: 14px; display: revert; list-style: disc; }
+.main-content .main-article ul li::marker{  }
+.card-s .cat .heart:hover{background-color: rgb(224 120 28);}
+.main-content .description{ margin-bottom: 1rem; font-size: 14px; text-align: justify; }
+.main-content .main-article strong{font-weight: 100;-webkit-text-stroke-width: 0.8px !important; letter-spacing: 0.3px;}
+.main-content .main-article h2::after {
+    bottom: 5px;
+}
+.card-s .card-title{
+    -webkit-text-stroke-width: 0.5px !important;
+    letter-spacing: 0.3px;
+}
+
+
+
+@media (min-width: 992px){
+	.submenu-link {
+    	padding: 4px 20px;
+    }
 }
 
 @media (min-width: 1600px){
@@ -120,7 +189,7 @@ header .navbar-expand-lg .navbar-nav.ml-auto .nav-icon.notification .dropdown-me
 	    left: calc(20%);
 	}
 	.scrollDown header .navbar .navbar-nav .nav-item > .dropdown-menu {
-	    margin-top: 6px;
+	    /* margin-top: 6px; */
 	}
 }
 
@@ -161,7 +230,7 @@ header .navbar-expand-lg .navbar-nav.ml-auto .nav-icon.notification .dropdown-me
 		color: #fff;
 		bottom: 0;bottom: -20px;
 	}
-	.floating-label .btn-circle::after, .sec-search .btn-circle.btn-toggle::after {content: 'Tìm kiếm sản phẩm';}
+	.floating-label .btn-circle::after, .sec-search .btn-circle.btn-toggle::after {content: 'TÃƒÂ¬m kiÃ¡ÂºÂ¿m sÃ¡ÂºÂ£n phÃ¡ÂºÂ©m';}
 }
 
 @media (max-width: 414px){
