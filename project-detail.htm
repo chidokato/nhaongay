@@ -24,6 +24,8 @@
 <link href="css/simpleLightbox.css" rel="stylesheet">
 <link href="css/tuan.css" rel="stylesheet">
 <!------------------- FONT ------------------->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 
 </head>
 
@@ -34,7 +36,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark" aria-label="Ninth navbar example">
 		<div class="container">
 			<a class="navbar-brand" href="#"><img src="images/lg-hd.svg" alt="" class="mw-100"></a>
-			<div class="toggle-menu" type="button" data-bs-toggle="button">
+			<div class="toggle-menu" data-bs-toggle="button">
 				<button class="navbar-toggler ico-menu" id="navbarToggler">
 					<div>
 						<span></span>
@@ -170,36 +172,40 @@
 				</div>
 				<div class="col-lg">
 					<div class="row g-3">
+						
 						<div class="col-lg">
 							<div class="form-floating">
-								<select class="form-select" id="floatingSelectType">
-								  <option selected>Mua bán</option>
-								  <option value="1">...</option>
-								</select>
-								<label for="floatingSelectType">Hình thức</label>
-							  </div>
-						</div>
-						<div class="col-lg">
-							<div class="form-floating">
-								<select class="form-select" id="floatingSelectCity">
+								<select class="form-select select2-floating" id="floatingSelectCity">
 								  <option selected>Tất cả</option>
-								  <option value="1">...</option>
+								  <option value="1">Hồ Chí Minh</option>
+								  <option value="2">Hà Nội</option>
+								  <option value="3">Thanh Hóa</option>
 								</select>
 								<label for="floatingSelectGrid">Tỉnh/Thành</label>
-							  </div>
+						  	</div>
 						</div>
+
 						<div class="col-lg">
 							<div class="form-floating">
-								<select class="form-select" id="floatingSelectDistrict">
+								<select class="form-select select2-floating" id="floatingSelectDistrict">
 								  <option selected>Tất cả</option>
-								  <option value="1">...</option>
+								  <option value="1">Bất động sản dòng tiền</option>
+								  <option value="1">Bất động sản dòng tiền</option>
+								  <option value="1">Bất động sản dòng tiền</option>
+								  <option value="1">Bất động sản dòng tiền</option>
+								  <option value="1">Bất động sản dòng tiền</option>
+								  <option value="1">Bất động sản dòng tiền</option>
+								  <option value="1">Bất động sản dòng tiền</option>
+								  <option value="1">Bất động sản dòng tiền</option>
+								  <option value="1">Bất động sản dòng tiền</option>
+								  <option value="1">Bất động sản dòng tiền</option>
 								</select>
-								<label for="floatingSelectGrid">Quận/Huyện</label>
+								<label for="floatingSelectGrid">Hình thức</label>
 							  </div>
 						</div>
 						<div class="col-lg">
 							<div class="form-floating">
-								<select class="form-select" id="floatingSelectWard">
+								<select class="form-select select2-floating" id="floatingSelectWard">
 								  <option selected>Tất cả</option>
 								  <option value="1">...</option>
 								</select>
@@ -208,12 +214,74 @@
 						</div>
 						<div class="col-lg">
 							<div class="form-floating">
-								<select class="form-select" id="floatingSelectType">
+								<select class="form-select select2-floating" id="floatingSelectType">
 								  <option selected>Tất cả</option>
 								  <option value="1">...</option>
 								</select>
 								<label for="floatingSelectType">Diện tích</label>
 							  </div>
+						</div>
+						<div class="col-lg">
+							<div class="dropdown form-more">
+								<div class="form-more-btn" data-bs-toggle="dropdown">
+									<span></span>
+									<i class="icon-menu"></i>
+								</div>
+								<div class="dropdown-menu dropdown-menu-end">
+									<div class="row g-2">
+										<div class="col-6">
+											<select id="" class="form-select select2-inner-dropdown">
+												<option selected="">Đường phố</option>
+												<option>...</option>
+											</select>
+										</div>
+										<div class="col-6">
+											<select id="" class="form-select">
+												<option selected="">Hướng cửa</option>
+												<option>...</option>
+											</select>
+										</div><div class="col-6">
+											<select id="" class="form-select select2-inner-dropdown">
+												<option selected="">Diện tích</option>
+												<option>...</option>
+											</select>
+										</div>
+										<div class="col-6">
+											<select id="" class="form-select">
+												<option selected="">Hướng ban công</option>
+												<option>...</option>
+											</select>
+										</div>
+										<div class="col-6">
+											<select id="" class="form-select">
+												<option selected="">Số phòng ngủ</option>
+												<option>...</option>
+											</select>
+										</div>
+										<div class="col-6">
+											<select id="" class="form-select">
+												<option selected="">Pháp lý</option>
+												<option>...</option>
+											</select>
+										</div>
+										<div class="col-6">
+											<select id="" class="form-select">
+												<option selected="">Số phòng WC</option>
+												<option>...</option>
+											</select>
+										</div>
+										<div class="col-6">
+											<div class="datepicker">
+												<input type="date" class="form-control" id="">
+												<i><img src="images/ico-datepicker.svg" alt=""></i>
+											</div>
+										</div>
+									</div>
+									<div class="text-center">
+										<button type="button" class="btn btn-primary active">Lọc</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -329,20 +397,6 @@
 					<div class="col-md-10">
 						<div class="product-dt-header">
 							<div class="product-dt-header-title">
-								<div class="download">
-									<div class="csbh">
-										<button type="button">
-											<i class="icon-mail-filled"></i>
-											<span>Chính sách bán hàng</span>
-										</button>
-									</div>
-									<div class="tdtt">
-										<button type="button">
-											<i class="icon-mail-filled"></i>
-											<span>Tiến độ thanh toán</span>
-										</button>
-									</div>
-								</div>
 								<h2>Bán ngay dự án chung cư cao cấp Roman Plaza</h2>
 								<div class="mb-2 text-muted"><small><i class="icon-location me-1"></i>Số 1 Trần Thủ Độ, P. Hoàng Liệt, Q. Hoàng Mai, TP. Hà Nội</small></div>
 								<p class="description">Chung cư Phương Đông Green Park là một trong những chung cư vô cùng “hot” khi mới bắt đầu ra mắt thị trường bất động sản tại quận Hoàng Mai. Ngoài những tiện ích mà dự án đem lại thì giá bán hết sức cạnh tranh là một trong những điểm hấp dẫn khách hàng hơn bao giờ hết.</p>
@@ -1059,7 +1113,10 @@
 <!------------------- END: FOOTER ------------------->
 
 <!------------------- JS core------------------->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/simpleLightbox.min.js"></script>
@@ -1213,6 +1270,22 @@
 	new SimpleLightbox({elements: '.overview-3dfl-a'});
 	new SimpleLightbox({elements: '.overview-3dfl-b'});
 
+</script>
+<script>
+	$(document).ready(function() {
+		$('.form-more .dropdown-menu').click(function (e) {e.stopPropagation();});
+		$('.select2-floating').select2();
+		$('.select2-inner-dropdown').select2({dropdownParent: $('.form-more .dropdown-menu')});
+		if (screen.width < 821) {
+			$('.form-more .form-more-btn').attr('data-bs-auto-close', 'false');
+
+		}
+		$(".select2-floating").select2({
+		    // options 
+		    searchInputPlaceholder: 'My custom placeholder...'
+		});
+		
+	});
 </script>
 </body>
 </html>

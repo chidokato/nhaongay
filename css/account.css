@@ -12,18 +12,6 @@
 
 .primary-title h3 {top:-12px}
 
-.login-botton p a{
-    font-weight: bold;
-}
-.login-botton p{
-    margin-top: 20px;    text-align: center;
-    font-size: .9rem;font-style: italic;
-}
-.primary-form .form-control{
-    height: calc(2.8rem + 2px);
-}
-
-
 
 @media (max-width: 768px) {
     .primary-form {width: 100%;}

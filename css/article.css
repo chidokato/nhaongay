@@ -153,7 +153,7 @@
 .product-subpage .main-article {padding-left: 0;}
 
 .product-dt-header-title {margin-bottom:24px}
-.product-dt-header-title h2 {line-height: 1.2; font-size: 25px; margin-bottom: 16px;}
+.product-dt-header-title h2 {line-height: 1.2; font-size: 25px; margin-bottom: 16px;font-weight: normal !important;}
 .product-dt-header-title a {color:var(--sub-color);border-bottom: 1px solid;}
 .product-dt-header-title a i {vertical-align:middle}
 
@@ -277,7 +277,7 @@
 @media (max-width: 1024px) {
   .sale-detail-sec .col-lg-9 .product-dt-header-title .d-md-none {display:flex;align-items:center;margin-bottom: 20px;justify-content: space-between;margin-top: 16px;}
   .sale-detail-sec .col-lg-9 .product-dt-header-title .fixBottom {bottom:0;position:fixed;background-color: #fff;left: 0;right: 0;margin-bottom: 0;padding: 1rem;box-shadow: 0 -2px 8px rgba(0,0,0,.08);z-index: 101;}
-  .sale-detail-sec .col-lg-9 .product-dt-header-title h2 {max-width:unset;min-height: unset;display: none !important;}
+  .sale-detail-sec .col-lg-9 .product-dt-header-title h2 {max-width:unset;min-height: unset;/* display: none !important; */font-weight: normal;}
   .sale-detail-sec .col-lg-9 .product-dt-header-title .product-price {margin-top: 0;display: flex;border-radius: 3px;align-items: center;}
   .sale-detail-sec .col-lg-9 .product-dt-header-title .product-price .new-price {display:flex;align-items: end;padding: 8px 12px 10px;border-radius: 3px 0 0 3px;}
   .sale-detail-sec .col-lg-9 .product-dt-header-title .product-price .new-price span {margin-right: 5px;font-size: 13px;line-height: 1.5;}
@@ -287,6 +287,20 @@
   .sale-detail-sec .col-lg-9 .product-dt-header-title .product-contact .btn {margin-bottom:0;border-radius:50%;border:none;box-shadow: none  !important;background:var(--main-color);color:#fff;-webkit-text-stroke-width: unset;padding: 0;width: 40px;height: 40px;justify-content: center;margin-left: 5px;}
   .sale-detail-sec .col-lg-9 .product-dt-header-title .product-contact .btn i {margin-right:0;-webkit-text-stroke-width: unset;}
   .sale-detail-sec .col-lg-9 .product-dt-header-title .product-contact .btn.btn-tel {background:var(--sub-color);}
+
+  .sale-detail-sec .col-lg-9 .product-dt-header-title .fixBottom {
+    -webkit-animation: slideUp .2s ease-out !important;
+    animation: slideUp .2s ease-out !important;	
+  }
+  
+  @-webkit-keyframes slideUp {
+      0% { -webkit-transform: translateY(50px)}   
+    100% { -webkit-transform: translateY(0px)}
+  }
+  @keyframes slideUp {
+      0% { transform: translateY(50px)}  
+    100% { transform: translateY(0px) }
+  }
 
   footer {padding-bottom: 80px;}
 }

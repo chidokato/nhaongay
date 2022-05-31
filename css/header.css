@@ -72,17 +72,17 @@ header nav li a.active.dropdown-toggle img, header nav li a.dropdown-toggle:hove
   transition: transform 0.5s cubic-bezier(0.5, 0, 0, 1);
   transform: scale3d(1, 1, 1);
 }
-.active .ico-menu span:nth-of-type(1) {
+header.show .ico-menu span:nth-of-type(1) {
   transform: translate3d(15%, 0, 0) rotate(45deg) scale(.85);
   transition: transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0.2s;
 }
-.active .ico-menu span:nth-of-type(2) {
+header.show .ico-menu span:nth-of-type(2) {
   transform: translate3d(0, -50%, 0) rotate(180deg);
 }
-.active .ico-menu span:nth-of-type(2):before {
+header.show .ico-menu span:nth-of-type(2):before {
   transform: translate3d(20%, 0, 0) scale3d(0, 1, 1);
 }
-.active .ico-menu span:nth-of-type(3) {
+header.show .ico-menu span:nth-of-type(3) {
   transform: translate3d(15%, 0, 0) rotate(-45deg) scale(.85);
   transition: all 0.4s cubic-bezier(0.5, 0, 0, 1) 0.25s;
   bottom: 1px;
@@ -282,7 +282,7 @@ header nav li.notification .message i {
   
   .toggle-menu {display:flex}
 	.toggle-menu ~ .navbar-collapse .collapse {display:block;position: absolute;left: 0;right: 0;background: rgb(15 26 51 / 100%);transition: all .3s;transform: translateX(-100%);padding-left: 15px;padding-right: 15px;height: calc(100vh - 54px);overflow-y: auto;opacity: 0;}
-	.toggle-menu.active ~ .navbar-collapse .collapse {transform:translateX(0);opacity: 1;}
+	header.show .navbar-collapse .collapse {transform:translateX(0);opacity: 1;}
 
   .toggle-nv, .navbar-vertical {display: none !important;}
 	#toggleFloatingMenu.toggle-nv {display: flex !important;}

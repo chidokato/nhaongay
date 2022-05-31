@@ -21,7 +21,6 @@
 <link href="css/card.css" rel="stylesheet">
 <link href="css/tuan.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
 <!------------------- FONT ------------------->
 
 </head>
@@ -178,7 +177,7 @@
 						</div>
 						<div class="col-lg">
 							<div class="form-floating">
-								<select class="form-select" id="floatingSelectType">
+								<select class="form-select select2-floating" id="floatingSelectType">
 								  <option selected>Tất cả</option>
 								  <option value="1">...</option>
 								</select>
@@ -187,9 +186,11 @@
 						</div>
 						<div class="col-lg">
 							<div class="form-floating">
-								<select class="form-select select2" id="floatingSelectCity">
-								  <option selected>Tất cả 1q</option>
+								<select class="form-select select2-floating" id="floatingSelectCity">
+								  <option selected>Tất cả</option>
 								  <option value="1">...</option>
+								  <option value="2">...</option>
+								  <option value="3">...</option>
 								</select>
 								<label for="floatingSelectGrid">Tỉnh/Thành</label>
 							  </div>
@@ -848,6 +849,7 @@
 
 <!------------------- JS core------------------->
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="js/custom.js"></script>
 
 <!------------------- SLIDER ON MOBILE ------------------->
@@ -875,11 +877,19 @@
 			})
 		}
 </script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-<script type="text/javascript">
+
+
+<script>
 	$(document).ready(function() {
-    	$('.select2').select2();
-});
+		$('.form-more .dropdown-menu').click(function (e) {e.stopPropagation();});
+		$('.select2-floating').select2();
+		$('.select2-inner-dropdown').select2({dropdownParent: $('.form-more .dropdown-menu')});
+
+		if (screen.width < 821) {
+			$('.form-more .form-more-btn').attr('data-bs-auto-close', 'false');
+
+		}
+	});
 </script>
 
 </body>

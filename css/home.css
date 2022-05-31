@@ -11,7 +11,7 @@
 .sec-partner-hp .agent-partner-slide-item-status span, .sec-partner-hp .agent-partner-slide-item-status a {display: flex; margin-bottom: 6px; font-size: 14px;}
 
 .sec-partner-hp .card-slide-style-1 {background: linear-gradient(180deg, rgba(18,28,52,1) 0%, rgba(10,85,151,1) 100%);/* box-shadow: 1px 1px 1px rgb(0 0 0 / 5%), 3px 1px 2px rgb(0 0 0 / 5%); */border-radius: 4px; transition:.2s all}
-.sec-partner-hp .card-slide-style-1:hover {background: linear-gradient(180deg, rgb(99 49 5)0%, rgb(224, 120, 28,1) 100%); box-shadow:0 0 1px rgb(0 0 0 / 10%), 0 3px 10px rgb(0 0 0 / 10%)}
+.sec-partner-hp .card-slide-style-1:hover {background: linear-gradient(180deg, rgb(99 49 5) 0%, rgb(224, 120, 28,1) 100%); box-shadow:0 0 1px rgb(0 0 0 / 10%), 0 3px 10px rgb(0 0 0 / 10%)}
 
 .sec-partner-hp .card-slide-style-1 > span {left: 22px; margin-top: 24px; width: 28%; border: none; box-shadow: 0px 1px 4px rgb(0 0 0 / 10%), 1px 4px 12px rgb(0 0 0 / 8%); padding: 16px;}
 
@@ -144,8 +144,8 @@
 .sec-product-hot .card-s > a .card-price .current-price {padding-right: 16px;padding-left: 6px;color: #fff;padding-bottom: 3px;}
 .sec-product-hot .card-s > a .card-price .old-price {padding: 16px 12px;background-color: rgb(10 85 151 / 88%);color: #fff;}
 
-.navhome {background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); position: fixed; width: 100%;}
-.scrollDown header, .navhome.show {background: #0f1a33;}
+header {background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); position: fixed; width: 100%;}
+.scrollDown header, header.show {background: #0f1a33;}
 .sec-hero {/* position: relative; */}
 .sec-hero .hero-slider {height: 84vh; overflow-y: hidden;}
 .sec-hero .swiper-slide {height: 84vh;}
@@ -196,7 +196,7 @@
 .hero-search .btn-expand span {flex:0 0 68px}
 .hero-search .btn-expand span::before, .sec-tcg .tcg-submit .btn.collapsed span::before {content:'Mở rộng'}
 .hero-search .btn-expand.active span::before, .sec-tcg .tcg-submit .btn span::before {content:'Thu gọn'}
-.hero-search .btn-expand.active span + i::before, .sec-tcg .tcg-submit .btn i::before {content:'-'}
+.hero-search .btn-expand.active span + i::before, .sec-tcg .tcg-submit .btn i::before, .offcanvas.show ~ .hero-content .hero-search .btn-expand span + i::before {content:'-'}
 
 .sec-tcg {background: url(../images/bg-tcg.jpg) no-repeat center bottom;background-size: cover;position: relative;min-height: 650px;}
 .sec-tcg .tcg-content .mb-2 {margin-bottom: 10px !important;}
@@ -318,6 +318,7 @@
 
 @media (max-width: 820px) {
 	.sec-partner-hp .card-slide-style-1 .card-slide-content {padding-left: 6vw;}
+	.offcanvas {z-index: 10000; transform: translateX(100%);}
 }
 @media (max-width: 768px) {
 	.sec-broker-hp {padding-bottom:32px; padding-top:32px; background: #f5f5f5}
@@ -331,7 +332,6 @@
     .sec-product-hot .swiper .card-s .card-body {padding: 12px 16px 4px;}
     .sec-product-hot .swiper .card-s {background-color: #fff;}
     .sec-product-hot .col-7 {display: none;}
-
 	
 
 	.sec-product-rent {padding-top:24px}
