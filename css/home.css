@@ -86,10 +86,12 @@
 .review-project-item .news-item .news-item-body .date i {font-size: 16px; color: var(--sub-color);}
 
 .review-project {padding-top: 28px;}
-.cover-title-home {position: relative;padding-top: 112px;padding-bottom: 20px;}
-.cover-title-home .cover-content {bottom: initial;left: 30px;}
-.cover-title-home .cover-content h3 {font-size: 56px; top: -20px;}
-.cover-title-home .cover-content .cover-title-filled {font-size: 36px;bottom: -30px;}
+.cover-title-home .cover-descip{ text-align:center; width:50%; margin:0 auto; color:var(--main-color); }
+.cover-title-home h3 {font-size: 3rem; text-align:center; font-weight:bold; margin-bottom:40px }
+.cover-title-home h3 span{ position:relative; }
+.cover-title-home h3 span:before{ position:absolute; content:""; background-color:var(--main-color); height:2px; width:200px; bottom:-20px; left:0; right:0; margin-left:auto; margin-right:auto; }
+.cover-title-home h3 span:after{ position:absolute; content: url('../images/icon-logo.jpg'); transform: scale(0.3); bottom:-50px; left:0; right:0; margin-left:auto; margin-right:auto; }
+.cover-title-home .cover-title-filled {font-size: 36px;}
 .review-project-content .swiper-pagination {bottom:12px !important;}
 
 
@@ -149,8 +151,8 @@
 .sec-product-hot .card-s > a .card-price .current-price {padding-right: 16px;padding-left: 6px;color: #fff;padding-bottom: 3px;}
 .sec-product-hot .card-s > a .card-price .old-price {padding: 16px 12px;background-color: rgb(10 85 151 / 88%);color: #fff;}
 
-header {background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); position: fixed; width: 100%;}
-.scrollDown header, header.show {background: #0f1a33;}
+header {background: var(--main-color); position: sticky; top: 0; width: 100%;}
+.scrollDown header, header.show {background: var(--main-color);;}
 .sec-hero {/* position: relative; */}
 .sec-hero .hero-slider {height: 84vh; overflow-y: hidden;}
 .sec-hero .swiper-slide {height: 84vh;}
@@ -165,7 +167,7 @@ header {background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%
 .sec-hero .swiper-button-next::after, .sec-hero .swiper-button-prev::after {display: none;}
 .sec-hero .swiper-wrapper {margin-bottom:0}
 .sec-hero .swiper-slide span {position: absolute; top:0; bottom: 0; left: 0; right: 0;}
-.sec-hero .swiper-slide::after {content:''; background-color: rgba(0,0,0,.36); position: absolute; top:0; bottom: 0; left: 0; right:0;}
+/*.sec-hero .swiper-slide::after {content:''; background-color: rgba(0,0,0,.36); position: absolute; top:0; bottom: 0; left: 0; right:0;}*/
 
 .hero-content {position: absolute;z-index: 2;top:0;bottom:0;left: 0;right:0;color: #fff;text-align: center;display: flex;justify-content: center;align-items: center;pointer-events: none; height: 84vh}
 .hero-text h2 {font-size: 48px;font-weight: bold;text-shadow: 0 0 8px rgb(0 0 0 / 60%);text-transform: uppercase;margin-bottom: 24px;}
@@ -223,6 +225,12 @@ header {background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%
 .sec-tcg .form-advance .input-group-text {font-size: 14px;margin-bottom: 2px;flex: 0 0 auto;width: 85px;}
 .sec-tcg .form-advance .input-group input {height: auto; font-size: 14px;}
 
+.tintuc .card-overlay-img{ height:100% }
+.tintuc .card-overlay-body h3{ font-weight:bold; font-size:1rem }
+.tintuc .card-overlay-body .description{ font-size:.9rem }
+.tintuc .news-item .news-item-body p{ font-size:1rem; -webkit-text-stroke-width: 0.7px; }
+.tintuc .news-item{box-shadow: 0 0 2px rgb(0 0 0 / 10%);}
+.tintuc .news-item .news-item-body{ padding:10px }
 
 @media (min-width: 992px) {
     .sec-tcg > .row {position:absolute; top:0; bottom:0; left:0; right:50%; overflow:hidden}
